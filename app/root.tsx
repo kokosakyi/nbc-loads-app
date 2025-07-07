@@ -1,28 +1,20 @@
 import {
   Links,
+  LiveReload,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
-
-import "./tailwind.css";
+import stylesheet from "./tailwind.css?url";
+import Navigation, { ThemeProvider } from "./components/Navigation";
 
 export const links: LinksFunction = () => [
-  { rel: "preconnect", href: "https://fonts.googleapis.com" },
-  {
-    rel: "preconnect",
-    href: "https://fonts.gstatic.com",
-    crossOrigin: "anonymous",
-  },
-  {
-    rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
-  },
+  { rel: "stylesheet", href: stylesheet },
 ];
 
-export function Layout({ children }: { children: React.ReactNode }) {
+export default function App() {
   return (
     <html lang="en">
       <head>
@@ -30,16 +22,74 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
+        {/* MathJax for equation rendering */}
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.MathJax = {
+                tex: {
+                  inlineMath: [['$', '$'], ['\\\\(', '\\\\)']],
+                  displayMath: [['$$', '$$'], ['\\\\[', '\\\\]']],
+                  processEscapes: true,
+                  processEnvironments: true,
+                  processRefs: true,
+                  tags: 'none',
+                  tagSide: 'right',
+                  tagIndent: '.8em',
+                  multlineWidth: '85%',
+                  macros: {}
+                },
+                options: {
+                  skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                  ignoreHtmlClass: 'tex2jax_ignore',
+                  processHtmlClass: 'tex2jax_process'
+                },
+                chtml: {
+                  scale: 1,
+                  minScale: 0.5,
+                  matchFontHeight: false,
+                  displayAlign: 'center',
+                  displayIndent: '0'
+                },
+                startup: {
+                  ready: function() {
+                    console.log('MathJax startup ready function called');
+                    MathJax.startup.defaultReady();
+                    // Mark MathJax as ready
+                    window.MathJaxReady = true;
+                    console.log('MathJax marked as ready');
+                    // Initial render
+                    setTimeout(() => {
+                      if (MathJax.typesetPromise) {
+                        console.log('Initial MathJax render');
+                        MathJax.typesetPromise();
+                      }
+                    }, 100);
+                  }
+                }
+              };
+            `
+          }}
+        />
+        <script
+          type="text/javascript"
+          id="MathJax-script"
+          async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+        />
       </head>
-      <body>
-        {children}
+      <body className="engineering-bg" style={{ fontFamily: "'Trebuchet MS', 'Segoe UI', Arial, sans-serif" }}>
+        <ThemeProvider>
+          <Navigation />
+          <main className="min-h-screen">
+            <Outlet />
+          </main>
+        </ThemeProvider>
         <ScrollRestoration />
         <Scripts />
+        <LiveReload />
       </body>
     </html>
   );
-}
-
-export default function App() {
-  return <Outlet />;
 }

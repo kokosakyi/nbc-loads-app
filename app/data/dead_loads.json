@@ -1,0 +1,998 @@
+[
+  {
+    "material": "Acoustical ﬁberboard",
+    "value": 0.05,
+    "units": "kPa",
+    "category": "Ceilings"
+  },
+  {
+    "material": "Gypsum board (per mm thickness)",
+    "value": 0.008,
+    "units": "kPa",
+    "category": "Ceilings"
+  },
+  {
+    "material": "Mechanical duct allowance",
+    "value": 0.19,
+    "units": "kPa",
+    "category": "Ceilings"
+  },
+  {
+    "material": "Plaster on tile or concrete",
+    "value": 0.24,
+    "units": "kPa",
+    "category": "Ceilings"
+  },
+  {
+    "material": "Plaster on wood lath",
+    "value": 0.38,
+    "units": "kPa",
+    "category": "Ceilings"
+  },
+  {
+    "material": "Suspended steel channel system",
+    "value": 0.1,
+    "units": "kPa",
+    "category": "Ceilings"
+  },
+  {
+    "material": "Suspended metal lath and cement plaster",
+    "value": 0.72,
+    "units": "kPa",
+    "category": "Ceilings"
+  },
+  {
+    "material": "Suspended metal lath and gypsum plaster",
+    "value": 0.48,
+    "units": "kPa",
+    "category": "Ceilings"
+  },
+  {
+    "material": "Wood furring suspension system",
+    "value": 0.12,
+    "units": "kPa",
+    "category": "Ceilings"
+  },
+  {
+    "material": "Asbestos-cement shingles",
+    "value": 0.19,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Asphalt shingles",
+    "value": 0.1,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Cement tile",
+    "value": 0.77,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Three-ply ready rooﬁng",
+    "value": 0.05,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Four-ply felt and gravel",
+    "value": 0.26,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Five-ply felt and gravel",
+    "value": 0.29,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Copper or tin",
+    "value": 0.05,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Corrugated asbestos-cement rooﬁng",
+    "value": 0.19,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Deck, metal, 20 gauge",
+    "value": 0.12,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Deck, metal, 18 gauge",
+    "value": 0.14,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Decking, 51-mm wood (Douglas ﬁr)",
+    "value": 0.24,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Decking, 76-mm wood (Douglas ﬁr)",
+    "value": 0.38,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Fiberboard, 13 mm",
+    "value": 0.04,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Gypsum sheathing, 13 mm",
+    "value": 0.1,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Insulation, Cellular glass (per mm thickness)",
+    "value": 0.0013,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Insulation, Fibrous glass (per mm thickness)",
+    "value": 0.0021,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Insulation, Fiberboard (per mm thickness)",
+    "value": 0.0028,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Insulation, Perlite (per mm thickness)",
+    "value": 0.0015,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Insulation, Polystyrene foam (per mm thickness)",
+    "value": 0.0004,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Insulation, Urethane foam with skin (per mm thickness)",
+    "value": 0.0009,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Plywood (per mm thickness)",
+    "value": 0.006,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Rigid insulation, 13 mm",
+    "value": 0.04,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Skylight, metal frame, 10-mm wire glass",
+    "value": 0.38,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Slate, 5 mm",
+    "value": 0.34,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Slate, 6 mm",
+    "value": 0.48,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Waterprooﬁng membrane, Bituminous, gravel-covered",
+    "value": 0.26,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Waterprooﬁng membrane, Bituminous, smooth surface",
+    "value": 0.07,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Waterprooﬁng membrane, Liquid applied",
+    "value": 0.05,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Waterprooﬁng membrane, Single-ply, sheet",
+    "value": 0.03,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Plywood (per mm thickness)",
+    "value": 0.0057,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Oriented strand board (per mm thickness)",
+    "value": 0.0062,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Wood shingles",
+    "value": 0.14,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Cinder concrete, per mm",
+    "value": 0.017,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Lightweight concrete, per mm",
+    "value": 0.015,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Sand, per mm",
+    "value": 0.015,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Stone concrete, per mm",
+    "value": 0.023,
+    "units": "kPa",
+    "category": "Coverings, roof, and wall"
+  },
+  {
+    "material": "Asphalt block (51 mm), 13-mm mortar",
+    "value": 1.44,
+    "units": "kPa",
+    "category": "Floors and floor finishes"
+  },
+  {
+    "material": "Cement ﬁnish (25 mm) on stone–concrete ﬁll",
+    "value": 1.53,
+    "units": "kPa",
+    "category": "Floors and floor finishes"
+  },
+  {
+    "material": "Ceramic or quarry tile (19 mm) on 13-mm mortar bed",
+    "value": 0.77,
+    "units": "kPa",
+    "category": "Floors and floor finishes"
+  },
+  {
+    "material": "Ceramic or quarry tile (19 mm) on 25-mm mortar bed",
+    "value": 1.1,
+    "units": "kPa",
+    "category": "Floors and floor finishes"
+  },
+  {
+    "material": "Concrete ﬁll ﬁnish (per mm thickness)",
+    "value": 0.023,
+    "units": "kPa",
+    "category": "Floors and floor finishes"
+  },
+  {
+    "material": "Hardwood ﬂooring, 22 mm",
+    "value": 0.19,
+    "units": "kPa",
+    "category": "Floors and floor finishes"
+  },
+  {
+    "material": "Linoleum or asphalt tile, 6 mm",
+    "value": 0.05,
+    "units": "kPa",
+    "category": "Floors and floor finishes"
+  },
+  {
+    "material": "Marble and mortar on stone–concrete ﬁll",
+    "value": 1.58,
+    "units": "kPa",
+    "category": "Floors and floor finishes"
+  },
+  {
+    "material": "Slate (per mm thickness)",
+    "value": 0.028,
+    "units": "kPa",
+    "category": "Floors and floor finishes"
+  },
+  {
+    "material": "Solid ﬂat tile on 25-mm mortar base",
+    "value": 1.1,
+    "units": "kPa",
+    "category": "Floors and floor finishes"
+  },
+  {
+    "material": "Subﬂooring, 19 mm",
+    "value": 0.14,
+    "units": "kPa",
+    "category": "Floors and floor finishes"
+  },
+  {
+    "material": "Terrazzo (38 mm) directly on slab",
+    "value": 0.91,
+    "units": "kPa",
+    "category": "Floors and floor finishes"
+  },
+  {
+    "material": "Terrazzo (25 mm) on stone–concrete ﬁll",
+    "value": 1.53,
+    "units": "kPa",
+    "category": "Floors and floor finishes"
+  },
+  {
+    "material": "Terrazzo (25 mm), 51-mm stone concrete",
+    "value": 1.53,
+    "units": "kPa",
+    "category": "Floors and floor finishes"
+  },
+  {
+    "material": "Wood block (76 mm) on mastic, no ﬁll",
+    "value": 0.48,
+    "units": "kPa",
+    "category": "Floors and floor finishes"
+  },
+  {
+    "material": "Wood block (76 mm) on 13-mm mortar base",
+    "value": 0.77,
+    "units": "kPa",
+    "category": "Floors and floor finishes"
+  },
+  {
+    "material": "Movable steel partitions",
+    "value": 0.19,
+    "units": "kPa",
+    "category": "Floors and floor finishes"
+  },
+  {
+    "material": "Wood or steel studs, 13-mm gypsum board each side",
+    "value": 0.38,
+    "units": "kPa",
+    "category": "Floors and floor finishes"
+  },
+  {
+    "material": "Wood studs, 51 × 102, unplastered",
+    "value": 0.19,
+    "units": "kPa",
+    "category": "Floors and floor finishes"
+  },
+  {
+    "material": "Wood studs, 51 × 102, plastered one side",
+    "value": 0.57,
+    "units": "kPa",
+    "category": "Floors and floor finishes"
+  },
+  {
+    "material": "Wood studs, 51 × 102, plastered two sides",
+    "value": 0.96,
+    "units": "kPa",
+    "category": "Floors and floor finishes"
+  },
+  {
+    "material": "Aluminum",
+    "value": 25.9,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Brass",
+    "value": 83.8,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Bronze, tin",
+    "value": 79.9,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Bronze, aluminum",
+    "value": 75.5,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Copper",
+    "value": 87.4,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Copper ore, pyrites",
+    "value": 41.2,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Gold",
+    "value": 189,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Iron, cast, pig",
+    "value": 70.7,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Iron, wrought",
+    "value": 76.2,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Iron, spiegel-eisen",
+    "value": 73.5,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Iron, ferro-silicon",
+    "value": 68.5,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Iron ore, hematite",
+    "value": 51.1,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Iron ore, limonite",
+    "value": 37.3,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Iron ore, magnetite",
+    "value": 49.5,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Iron slag",
+    "value": 27.1,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Lead",
+    "value": 112,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Lead ore, galena",
+    "value": 73.1,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Magnesium",
+    "value": 17.6,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Manganese",
+    "value": 74.6,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Manganese ore",
+    "value": 40.7,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Mercury",
+    "value": 133,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Monel",
+    "value": 87.4,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Nickel",
+    "value": 88.8,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Platinum",
+    "value": 209,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Silver",
+    "value": 103,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Steel, rolled",
+    "value": 77,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Tin",
+    "value": 72.1,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Tin ore, cassiterite",
+    "value": 65.7,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Zinc",
+    "value": 69.1,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Zinc ore, blende",
+    "value": 39.7,
+    "units": "kN/m3",
+    "category": "Metals, Alloys, Ores"
+  },
+  {
+    "material": "Ashlar",
+    "value": 25.1,
+    "units": "kN/m3",
+    "category": "Masonry"
+  },
+  {
+    "material": "Brick, soft",
+    "value": 17.3,
+    "units": "kN/m3",
+    "category": "Masonry"
+  },
+  {
+    "material": "Brick, common",
+    "value": 19.6,
+    "units": "kN/m3",
+    "category": "Masonry"
+  },
+  {
+    "material": "Brick, pressed",
+    "value": 22,
+    "units": "kN/m3",
+    "category": "Masonry"
+  },
+  {
+    "material": "Clay tile",
+    "value": 9.42,
+    "units": "kN/m3",
+    "category": "Masonry"
+  },
+  {
+    "material": "Rubble",
+    "value": 24.3,
+    "units": "kN/m3",
+    "category": "Masonry"
+  },
+  {
+    "material": "Concrete, cinder, haydite",
+    "value": 17.3,
+    "units": "kN/m3",
+    "category": "Masonry"
+  },
+  {
+    "material": "Concrete, slag",
+    "value": 20.4,
+    "units": "kN/m3",
+    "category": "Masonry"
+  },
+  {
+    "material": "Concrete, stone",
+    "value": 22.7,
+    "units": "kN/m3",
+    "category": "Masonry"
+  },
+  {
+    "material": "Concrete, stone, reinforced",
+    "value": 23.5,
+    "units": "kN/m3",
+    "category": "Masonry"
+  },
+  {
+    "material": "Asphaltum",
+    "value": 12.7,
+    "units": "kN/m3",
+    "category": "Miscellaneous"
+  },
+  {
+    "material": "Tar, bituminous",
+    "value": 11.8,
+    "units": "kN/m3",
+    "category": "Miscellaneous"
+  },
+  {
+    "material": "Glass, common",
+    "value": 24.5,
+    "units": "kN/m3",
+    "category": "Miscellaneous"
+  },
+  {
+    "material": "Glass, plate or crown",
+    "value": 25.3,
+    "units": "kN/m3",
+    "category": "Miscellaneous"
+  },
+  {
+    "material": "Glass, crystal",
+    "value": 28.9,
+    "units": "kN/m3",
+    "category": "Miscellaneous"
+  },
+  {
+    "material": "Ice",
+    "value": 8.8,
+    "units": "kN/m3",
+    "category": "Ice and snow"
+  },
+  {
+    "material": "Snow, dry, fresh fallen",
+    "value": 1.26,
+    "units": "kN/m3",
+    "category": "Ice and snow"
+  },
+  {
+    "material": "Birch",
+    "value": 6.76,
+    "units": "kN/m3",
+    "category": "Timber"
+  },
+  {
+    "material": "Cedar",
+    "value": 3.45,
+    "units": "kN/m3",
+    "category": "Timber"
+  },
+  {
+    "material": "Fir, Douglas, seasoned",
+    "value": 5.34,
+    "units": "kN/m3",
+    "category": "Timber"
+  },
+  {
+    "material": "Fir, Douglas, unseasoned",
+    "value": 6.29,
+    "units": "kN/m3",
+    "category": "Timber"
+  },
+  {
+    "material": "Fir, Douglas, wet",
+    "value": 7.86,
+    "units": "kN/m3",
+    "category": "Timber"
+  },
+  {
+    "material": "Fir, Douglas, glue laminated",
+    "value": 5.34,
+    "units": "kN/m3",
+    "category": "Timber"
+  },
+  {
+    "material": "Hemlock",
+    "value": 4.72,
+    "units": "kN/m3",
+    "category": "Timber"
+  },
+  {
+    "material": "Larch, tamarack",
+    "value": 5.5,
+    "units": "kN/m3",
+    "category": "Timber"
+  },
+  {
+    "material": "Larch, western",
+    "value": 5.97,
+    "units": "kN/m3",
+    "category": "Timber"
+  },
+  {
+    "material": "Maple",
+    "value": 7.23,
+    "units": "kN/m3",
+    "category": "Timber"
+  },
+  {
+    "material": "Oak, red",
+    "value": 6.76,
+    "units": "kN/m3",
+    "category": "Timber"
+  },
+  {
+    "material": "Oak, white",
+    "value": 7.38,
+    "units": "kN/m3",
+    "category": "Timber"
+  },
+  {
+    "material": "Pine, jack",
+    "value": 4.72,
+    "units": "kN/m3",
+    "category": "Timber"
+  },
+  {
+    "material": "Pine, ponderosa",
+    "value": 5.03,
+    "units": "kN/m3",
+    "category": "Timber"
+  },
+  {
+    "material": "Pine, red",
+    "value": 4.4,
+    "units": "kN/m3",
+    "category": "Timber"
+  },
+  {
+    "material": "Pine, white",
+    "value": 4.08,
+    "units": "kN/m3",
+    "category": "Timber"
+  },
+  {
+    "material": "Poplar",
+    "value": 4.72,
+    "units": "kN/m3",
+    "category": "Timber"
+  },
+  {
+    "material": "Spruce",
+    "value": 4.4,
+    "units": "kN/m3",
+    "category": "Timber"
+  },
+  {
+    "material": "Alcohol, pure",
+    "value": 7.7,
+    "units": "kN/m3",
+    "category": "Liquids"
+  },
+  {
+    "material": "Gasoline",
+    "value": 6.6,
+    "units": "kN/m3",
+    "category": "Liquids"
+  },
+  {
+    "material": "Oils",
+    "value": 9.11,
+    "units": "kN/m3",
+    "category": "Liquids"
+  },
+  {
+    "material": "Water, fresh at 4 deg C",
+    "value": 9.81,
+    "units": "kN/m3",
+    "category": "Liquids"
+  },
+  {
+    "material": "Water, fresh at 100 deg C",
+    "value": 9.42,
+    "units": "kN/m3",
+    "category": "Liquids"
+  },
+  {
+    "material": "Water, salt",
+    "value": 10.1,
+    "units": "kN/m3",
+    "category": "Liquids"
+  },
+  {
+    "material": "Earth, wet",
+    "value": 15.7,
+    "units": "kN/m3",
+    "category": "Earth"
+  },
+  {
+    "material": "Earth, dry",
+    "value": 11.8,
+    "units": "kN/m3",
+    "category": "Earth"
+  },
+  {
+    "material": "Sand and gravel, wet",
+    "value": 18.8,
+    "units": "kN/m3",
+    "category": "Earth"
+  },
+  {
+    "material": "Sand and gravel, dry",
+    "value": 16.5,
+    "units": "kN/m3",
+    "category": "Earth"
+  },
+  {
+    "material": "Cemet, Portland, loose",
+    "value": 14.8,
+    "units": "kN/m3",
+    "category": "Building Materials"
+  },
+  {
+    "material": "Cement, Portland, set",
+    "value": 28.7,
+    "units": "kN/m3",
+    "category": "Building Materials"
+  },
+  {
+    "material": "Lime, gypsum, loose",
+    "value": 10.1,
+    "units": "kN/m3",
+    "category": "Building Materials"
+  },
+  {
+    "material": "Mortar, cement-lime, set",
+    "value": 16.2,
+    "units": "kN/m3",
+    "category": "Building Materials"
+  },
+  {
+    "material": "Quarry stone, piled",
+    "value": 17.3,
+    "units": "kN/m3",
+    "category": "Building Materials"
+  },
+  {
+    "material": "Steel deck 38 mm deep (20 ga)",
+    "value": 0.1,
+    "units": "kPa",
+    "category": "Building Materials"
+  },
+  {
+    "material": "Steel deck 38 mm deep (18 ga)",
+    "value": 0.15,
+    "units": "kPa",
+    "category": "Building Materials"
+  },
+  {
+    "material": "Steel deck 76 mm deep (Narrow-rib -20 ga)",
+    "value": 0.15,
+    "units": "kPa",
+    "category": "Building Materials"
+  },
+  {
+    "material": "Steel deck 76 mm deep (Narrow-rib 16 ga)",
+    "value": 0.3,
+    "units": "kPa",
+    "category": "Building Materials"
+  },
+  {
+    "material": "Steel deck 76 mm deep (Wide-rib -20 ga)",
+    "value": 0.1,
+    "units": "kPa",
+    "category": "Building Materials"
+  },
+  {
+    "material": "Steel deck 76 mm deep (Wide-rib 16 ga)",
+    "value": 0.15,
+    "units": "kPa",
+    "category": "Building Materials"
+  },
+  {
+    "material": "38 mm x 184 mm joists at 400 crs",
+    "value": 0.09,
+    "units": "kPa",
+    "category": "Building Materials"
+  },
+  {
+    "material": "38 mm x 235 mm joists at 400 crs",
+    "value": 0.12,
+    "units": "kPa",
+    "category": "Building Materials"
+  },
+  {
+    "material": "38 mm x 286 mm joists at 400 crs",
+    "value": 0.14,
+    "units": "kPa",
+    "category": "Building Materials"
+  },
+  {
+    "material": "Plywood, 11 mm thick",
+    "value": 0.06,
+    "units": "kPa",
+    "category": "Building Materials"
+  },
+  {
+    "material": "Plywood, 14 mm thick",
+    "value": 0.08,
+    "units": "kPa",
+    "category": "Building Materials"
+  },
+  {
+    "material": "Plywood, 19 mm thick",
+    "value": 0.11,
+    "units": "kPa",
+    "category": "Building Materials"
+  },
+  {
+    "material": "Chipboard, 12.7 mm thick",
+    "value": 0.07,
+    "units": "kPa",
+    "category": "Building Materials"
+  },
+  {
+    "material": "Chipboard, 15.9 mm thick",
+    "value": 0.09,
+    "units": "kPa",
+    "category": "Building Materials"
+  },
+  {
+    "material": "Chipboard, 19.0 mm thick",
+    "value": 0.11,
+    "units": "kPa",
+    "category": "Building Materials"
+  },
+  {
+    "material": "Vinyl, linoleum or asphalt tile",
+    "value": 0.07,
+    "units": "kPa",
+    "category": "Building Materials"
+  },
+  {
+    "material": "Softwood subfloor per 10 mm",
+    "value": 0.06,
+    "units": "kPa",
+    "category": "Building Materials"
+  },
+  {
+    "material": "Hardwood per 10 mm",
+    "value": 0.08,
+    "units": "kPa",
+    "category": "Building Materials"
+  },
+  {
+    "material": "Carpeting",
+    "value": 0.1,
+    "units": "kPa",
+    "category": "Building Materials"
+  },
+  {
+    "material": "Asphaltic concrete per 10 mm",
+    "value": 0.23,
+    "units": "kPa",
+    "category": "Building Materials"
+  }
+]

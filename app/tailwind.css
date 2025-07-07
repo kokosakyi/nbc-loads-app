@@ -10,3 +10,487 @@ body {
     color-scheme: dark;
   }
 }
+
+/* Engineering Theme Styles - Dark & Light Modes */
+
+/* Dark Mode (Default) */
+.engineering-bg {
+  background-color: #1a1a1a;
+  background-image: 
+    /* Concrete texture */
+    radial-gradient(circle at 20% 80%, rgba(180, 90, 30, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(180, 90, 30, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(180, 90, 30, 0.05) 0%, transparent 50%),
+    /* Graph paper grid */
+    linear-gradient(rgba(180, 90, 30, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(180, 90, 30, 0.1) 1px, transparent 1px);
+  background-size: 150px 150px, 200px 200px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: 0 0, 50px 50px, 25px 25px, 0 0, 0 0;
+  position: relative;
+}
+
+/* Light Mode Background */
+.light .engineering-bg {
+  background-color: #f8f7f4;
+  background-image: 
+    /* Light concrete texture */
+    radial-gradient(circle at 20% 80%, rgba(180, 90, 30, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(180, 90, 30, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(180, 90, 30, 0.04) 0%, transparent 50%),
+    /* Light graph paper grid */
+    linear-gradient(rgba(180, 90, 30, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(180, 90, 30, 0.15) 1px, transparent 1px);
+  background-size: 150px 150px, 200px 200px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: 0 0, 50px 50px, 25px 25px, 0 0, 0 0;
+}
+
+.engineering-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    /* Major grid lines */
+    linear-gradient(rgba(180, 90, 30, 0.06) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(180, 90, 30, 0.06) 2px, transparent 2px),
+    /* Concrete speckles */
+    radial-gradient(circle at 10% 20%, rgba(180, 90, 30, 0.03) 1px, transparent 1px),
+    radial-gradient(circle at 90% 80%, rgba(180, 90, 30, 0.03) 1px, transparent 1px),
+    radial-gradient(circle at 30% 70%, rgba(180, 90, 30, 0.03) 1px, transparent 1px),
+    radial-gradient(circle at 70% 30%, rgba(180, 90, 30, 0.03) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 60px 60px, 80px 80px, 40px 40px, 90px 90px;
+  pointer-events: none;
+}
+
+.concrete-texture {
+  background: linear-gradient(145deg, #f0efed 0%, #e5e3df 100%);
+  background-image: 
+    /* Primary concrete texture */
+    radial-gradient(circle at 30% 40%, rgba(64, 64, 64, 0.2) 1px, transparent 1px),
+    radial-gradient(circle at 70% 60%, rgba(64, 64, 64, 0.15) 1px, transparent 1px),
+    radial-gradient(circle at 10% 80%, rgba(64, 64, 64, 0.1) 2px, transparent 2px),
+    radial-gradient(circle at 90% 20%, rgba(64, 64, 64, 0.1) 1px, transparent 1px),
+    /* Secondary speckles */
+    radial-gradient(circle at 50% 70%, rgba(64, 64, 64, 0.08) 1px, transparent 1px),
+    radial-gradient(circle at 25% 25%, rgba(64, 64, 64, 0.08) 1px, transparent 1px),
+    radial-gradient(circle at 75% 85%, rgba(64, 64, 64, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px, 60px 60px, 80px 80px, 35px 35px, 25px 25px, 45px 45px, 65px 65px;
+  position: relative;
+  border: 1px solid rgba(64, 64, 64, 0.2);
+}
+
+.concrete-texture::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    /* Concrete aggregate pattern */
+    linear-gradient(45deg, rgba(64, 64, 64, 0.04) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(64, 64, 64, 0.04) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(64, 64, 64, 0.04) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(64, 64, 64, 0.04) 75%);
+  background-size: 12px 12px, 12px 12px, 12px 12px, 12px 12px;
+  background-position: 0 0, 0 6px, 6px -6px, -6px 0px;
+  pointer-events: none;
+}
+
+.concrete-heavy {
+  background: linear-gradient(145deg, #ebe9e4 0%, #d9d5cf 100%);
+  background-image: 
+    /* Heavy concrete texture with larger aggregates */
+    radial-gradient(circle at 15% 25%, rgba(64, 64, 64, 0.25) 2px, transparent 2px),
+    radial-gradient(circle at 85% 75%, rgba(64, 64, 64, 0.2) 3px, transparent 3px),
+    radial-gradient(circle at 45% 85%, rgba(64, 64, 64, 0.15) 2px, transparent 2px),
+    radial-gradient(circle at 65% 15%, rgba(64, 64, 64, 0.18) 2px, transparent 2px),
+    radial-gradient(circle at 25% 65%, rgba(64, 64, 64, 0.12) 1px, transparent 1px),
+    radial-gradient(circle at 75% 45%, rgba(64, 64, 64, 0.12) 1px, transparent 1px),
+    /* Fine speckles */
+    radial-gradient(circle at 10% 10%, rgba(64, 64, 64, 0.08) 1px, transparent 1px),
+    radial-gradient(circle at 90% 90%, rgba(64, 64, 64, 0.08) 1px, transparent 1px);
+  background-size: 70px 70px, 90px 90px, 55px 55px, 65px 65px, 30px 30px, 35px 35px, 15px 15px, 20px 20px;
+  position: relative;
+  border: 2px solid rgba(64, 64, 64, 0.3);
+}
+
+.engineering-card {
+  background: rgba(0, 0, 0, 0.85);
+  border: 2px solid #b4641e;
+  border-radius: 3px;
+  position: relative;
+  box-shadow: 
+    0 4px 6px rgba(180, 90, 30, 0.25),
+    inset 0 1px 0 rgba(180, 90, 30, 0.1);
+  backdrop-filter: blur(2px);
+  padding: 1.5rem;
+}
+
+/* Light Mode Card */
+.light .engineering-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #b4641e;
+  color: #2d2d2d;
+  box-shadow: 
+    0 4px 6px rgba(180, 90, 30, 0.15),
+    inset 0 1px 0 rgba(180, 90, 30, 0.1);
+  backdrop-filter: blur(2px);
+}
+
+@media (min-width: 640px) {
+  .engineering-card {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .engineering-card {
+    padding: 2.5rem;
+  }
+}
+
+.engineering-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    /* Subtle grid on cards */
+    linear-gradient(rgba(180, 90, 30, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(180, 90, 30, 0.05) 1px, transparent 1px);
+  background-size: 10px 10px;
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.technical-border {
+  border: 2px solid #5a5a5a;
+  border-radius: 2px;
+  position: relative;
+}
+
+.technical-border::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #5a5a5a 0%, #404040 100%);
+  border-radius: 4px;
+  z-index: -1;
+}
+
+.technical-border::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  background: linear-gradient(45deg, #d0d0d0 0%, #b8b8b8 100%);
+  border-radius: 3px;
+  z-index: -1;
+}
+
+.engineering-input {
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #5a5a5a;
+  border-radius: 2px;
+  font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.engineering-input:focus {
+  outline: none;
+  border-color: #404040;
+  box-shadow: 0 0 0 3px rgba(216, 67, 21, 0.2);
+  background: rgba(255, 255, 255, 1);
+}
+
+.engineering-button {
+  background: linear-gradient(145deg, #5a5a5a 0%, #404040 100%);
+  border: 2px solid #404040;
+  border-radius: 2px;
+  color: white;
+  font-weight: 600;
+  font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.engineering-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.engineering-button:hover::before {
+  left: 100%;
+}
+
+.engineering-button:hover {
+  background: linear-gradient(145deg, #4a4a4a 0%, #2a2a2a 100%);
+  border-color: #2a2a2a;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(64, 64, 64, 0.3);
+}
+
+.engineering-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(64, 64, 64, 0.3);
+}
+
+.engineering-table {
+  background: rgba(255, 255, 255, 0.98);
+  border: 2px solid #5a5a5a;
+  border-radius: 3px;
+  overflow: hidden;
+  backdrop-filter: blur(2px);
+}
+
+.engineering-table th {
+  background: linear-gradient(145deg, #5a5a5a 0%, #404040 100%);
+  color: white;
+  font-weight: 600;
+  font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #404040;
+}
+
+.engineering-table td {
+  border-bottom: 1px solid #d0d0d0;
+  border-right: 1px solid #d0d0d0;
+  font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+  font-weight: 500;
+}
+
+.engineering-table tr:nth-child(even) {
+  background: rgba(224, 224, 224, 0.25);
+}
+
+.engineering-table tr:hover {
+  background: rgba(64, 64, 64, 0.08);
+}
+
+.engineering-nav {
+  background: linear-gradient(145deg, #000000 0%, #1a1a1a 100%);
+  border-bottom: 4px solid #b4641e;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+/* Light Mode Navigation */
+.light .engineering-nav {
+  background: linear-gradient(145deg, #f8f7f4 0%, #ede9e1 100%);
+  border-bottom: 4px solid #b4641e;
+  box-shadow: 0 2px 8px rgba(180, 90, 30, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.engineering-nav-item {
+  color: #f0f0f0;
+  font-weight: 600;
+  font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Light Mode Navigation Items */
+.light .engineering-nav-item {
+  color: #2d2d2d;
+}
+
+.engineering-nav-item:hover {
+  background: rgba(180, 100, 30, 0.2);
+  color: #fff4e6;
+}
+
+.light .engineering-nav-item:hover {
+  background: rgba(180, 100, 30, 0.15);
+  color: #b4641e;
+}
+
+.engineering-nav-item.active {
+  background: linear-gradient(145deg, #b4641e 0%, #a0531a 100%);
+  color: white;
+  box-shadow: 0 2px 4px rgba(180, 100, 30, 0.3);
+}
+
+.light .engineering-nav-item.active {
+  background: linear-gradient(145deg, #b4641e 0%, #a0531a 100%);
+  color: white;
+  box-shadow: 0 2px 4px rgba(180, 100, 30, 0.3);
+}
+
+.engineering-logo {
+  font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #b4641e;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(145deg, #b4641e 0%, #d4751e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.engineering-logo-text {
+  color: #f0f0f0;
+  font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Light Mode Logo Text */
+.light .engineering-logo-text {
+  color: #2d2d2d;
+  text-shadow: 1px 1px 2px rgba(180, 90, 30, 0.1);
+}
+
+.engineering-dropdown {
+  background: rgba(0, 0, 0, 0.98);
+  border: 2px solid #b4641e;
+  border-radius: 3px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(180, 100, 30, 0.3);
+}
+
+.engineering-dropdown-item {
+  color: #f0f0f0;
+  font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+  font-weight: 500;
+  border-bottom: 1px solid #b4641e;
+  transition: all 0.3s ease;
+}
+
+.engineering-dropdown-item:hover {
+  background: rgba(180, 100, 30, 0.2);
+  color: #fff4e6;
+}
+
+.engineering-dropdown-item.active {
+  background: linear-gradient(145deg, #b4641e 0%, #a0531a 100%);
+  color: white;
+}
+
+.metal-accent {
+  background: linear-gradient(145deg, #9a9a9a 0%, #5a5a5a 100%);
+  border: 1px solid #404040;
+  border-radius: 2px;
+}
+
+.concrete-panel {
+  background: linear-gradient(145deg, #f2f0eb 0%, #e0ddd6 100%);
+  background-image: 
+    /* Concrete aggregate pattern */
+    radial-gradient(circle at 25% 35%, rgba(64, 64, 64, 0.15) 1px, transparent 1px),
+    radial-gradient(circle at 75% 65%, rgba(64, 64, 64, 0.12) 1px, transparent 1px),
+    radial-gradient(circle at 15% 75%, rgba(64, 64, 64, 0.1) 2px, transparent 2px),
+    radial-gradient(circle at 85% 25%, rgba(64, 64, 64, 0.1) 1px, transparent 1px),
+    radial-gradient(circle at 45% 15%, rgba(64, 64, 64, 0.08) 1px, transparent 1px),
+    radial-gradient(circle at 65% 85%, rgba(64, 64, 64, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px, 55px 55px, 70px 70px, 30px 30px, 25px 25px, 35px 35px;
+  border: 2px solid #9a9a9a;
+  border-radius: 3px;
+  position: relative;
+  box-shadow: inset 0 1px 3px rgba(64, 64, 64, 0.1);
+}
+
+.concrete-panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    /* Fine texture overlay */
+    linear-gradient(45deg, rgba(64, 64, 64, 0.02) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(64, 64, 64, 0.02) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(64, 64, 64, 0.02) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(64, 64, 64, 0.02) 75%);
+  background-size: 8px 8px, 8px 8px, 8px 8px, 8px 8px;
+  background-position: 0 0, 0 4px, 4px -4px, -4px 0px;
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.blueprint-bg {
+  background: linear-gradient(145deg, #1e3a8a 0%, #1e40af 100%);
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+  position: relative;
+}
+
+.blueprint-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 100px 100px;
+  pointer-events: none;
+}
+
+.steel-texture {
+  background: linear-gradient(145deg, #5a5a5a 0%, #404040 100%);
+  background-image: 
+    /* Steel plate texture */
+    linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.1) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.1) 75%);
+  background-size: 30px 30px;
+  background-position: 0 0, 0 15px, 15px -15px, -15px 0px;
+  border: 2px solid #404040;
+}
+
+.nbc-accent {
+  background: linear-gradient(145deg, #b4641e 0%, #a0531a 100%);
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.nbc-accent-light {
+  background: linear-gradient(145deg, #d4751e 0%, #b4641e 100%);
+  color: white;
+}
+
+.warm-text {
+  color: #3a3a3a;
+}
+
+.warm-text-light {
+  color: #5a5a5a;
+}
+
+.warm-text-lighter {
+  color: #7a7a7a;
+}
