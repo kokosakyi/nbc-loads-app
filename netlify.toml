@@ -1,19 +1,14 @@
 [build]
   command = "npm run build"
   functions = ".netlify/functions-internal"
-  publish = "public"
+  publish = "build/client"
 
 [dev]
   command = "npm run dev"
   port = 3000
 
-[[redirects]]
-  from = "/*"
-  to = "/.netlify/functions/server"
-  status = 200
-
 [[headers]]
-  for = "/build/*"
+  for = "/assets/*"
   [headers.values]
     "Cache-Control" = "public, max-age=31536000, s-maxage=31536000"
 
