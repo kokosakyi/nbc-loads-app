@@ -86,8 +86,6 @@ export default function Index() {
             </h1>
             <p className="mt-3 max-w-md mx-auto text-base sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
               Professional load calculators, educational resources, and code references based on the National Building Code of Canada 2020
-              <br />
-              HENRY MENSAH ACKUN APPROVES THIS MESSAGE
             </p>
             <div className="mt-8">
               <Link

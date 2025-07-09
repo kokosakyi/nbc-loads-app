@@ -1,14 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 import { useState, useEffect } from "react";
 import {
-    Squares2X2Icon,
-    HomeIcon,
-    CubeIcon,
-    Square3Stack3DIcon,
-    BuildingStorefrontIcon,
-    MapPinIcon,
-    CalculatorIcon,
-    BuildingOfficeIcon
+    MapPinIcon
 } from "@heroicons/react/24/outline";
 import snowWindLoadsData from "~/data/snow_wind_loads.json";
 
@@ -55,15 +48,10 @@ interface SnowWindLoadData {
 }
 
 interface RoofParameters {
-    type: "flat" | "gable" | "hip" | "shed" | "curved" | "complex";
     length: number; // m (larger plan dimension)
     width: number; // m (smaller plan dimension)
     slope: number; // degrees
     height: number; // m above ground
-    exposure: "sheltered" | "normal" | "exposed";
-    hasObstructions: boolean;
-    parapetHeight?: number; // m
-    adjacentBuilding?: boolean;
     isSlippery: boolean; // for Cs calculation
     terrainType: "open" | "rural" | "exposed_north"; // for Cw calculation
 }
@@ -90,94 +78,17 @@ interface SnowLoadCase {
     description: string;
     loadValue: number; // kN/m²
     designCase: "uls" | "sls";
-    isBalanced: boolean;
     distribution: "uniform" | "triangular" | "trapezoidal";
     driftLoad?: number;
 }
 
-interface CalculatorType {
-    id: string;
-    name: string;
-    description: string;
-    icon: typeof CalculatorIcon;
-    nbcReference: string;
-    features: string[];
-}
 
-const calculatorTypes: CalculatorType[] = [
-    {
-        id: "basic",
-        name: "Basic Snow Load",
-        description: "Standard snow load calculation for single-level roofs",
-        icon: CalculatorIcon,
-        nbcReference: "NBC 2020 - Article 4.1.6.1 to 4.1.6.13",
-        features: [
-            "Ground snow load (Ss)",
-            "Basic roof snow load factors (Cb, Cw, Cs, Ca)",
-            "Importance factors (Is)",
-            "Rain load (Sr)",
-            "Balanced and unbalanced loads"
-        ]
-    },
-    {
-        id: "stepped",
-        name: "Stepped Roof",
-        description: "Snow load calculation for multi-level roofs with drifting",
-        icon: BuildingOfficeIcon,
-        nbcReference: "NBC 2020 - Article 4.1.6.14 to 4.1.6.16",
-        features: [
-            "Upper and lower roof levels",
-            "Windward and leeward drifting",
-            "Drift height calculations",
-            "Accumulation factors",
-            "Sliding snow loads"
-        ]
-    }
-];
 
-const roofTypes = [
-    {
-        type: "flat" as const,
-        name: "Flat Roof",
-        icon: Squares2X2Icon,
-        description: "Slope ≤ 15°, uniform snow distribution",
-        shapeFactors: { balanced: 0.8 }
-    },
-    {
-        type: "gable" as const,
-        name: "Gable Roof",
-        icon: HomeIcon,
-        description: "Two sloped surfaces, ridge at center",
-        shapeFactors: { balanced: 0.8, unbalanced: [0.4, 1.2] }
-    },
-    {
-        type: "hip" as const,
-        name: "Hip Roof",
-        icon: CubeIcon,
-        description: "Four sloped surfaces meeting at center",
-        shapeFactors: { balanced: 0.8, unbalanced: [0.4, 1.0] }
-    },
-    {
-        type: "shed" as const,
-        name: "Shed Roof",
-        icon: Square3Stack3DIcon,
-        description: "Single sloped surface",
-        shapeFactors: { balanced: 0.8, unbalanced: [0.4, 1.0] }
-    },
-    {
-        type: "curved" as const,
-        name: "Curved Roof",
-        icon: BuildingStorefrontIcon,
-        description: "Arched or curved geometry",
-        shapeFactors: { balanced: 0.8, unbalanced: [0.2, 1.4] }
-    }
-];
 
 
 
 export default function SnowLoadCalculator() {
-    const [selectedCalculator, setSelectedCalculator] = useState<string>("");
-    const [step, setStep] = useState(0); // 0 for calculator selection, then 1+ for calculator steps
+    const [step, setStep] = useState(1); // Start at step 1 (location selection)
     const [selectedProvince, setSelectedProvince] = useState<string>("");
     const [selectedLocation, setSelectedLocation] = useState<SnowWindLoadData | null>(null);
     const [customLocation, setCustomLocation] = useState({
@@ -187,13 +98,10 @@ export default function SnowLoadCalculator() {
     });
 
     const [roofParams, setRoofParams] = useState<RoofParameters>({
-        type: "flat",
         length: 20,
         width: 15,
         slope: 0,
         height: 6,
-        exposure: "normal",
-        hasObstructions: false,
         isSlippery: false,
         terrainType: "open"
     });
@@ -388,13 +296,9 @@ export default function SnowLoadCalculator() {
     };
 
     const calculateAccumulationFactor = (): number => {
-        // Get the roof type shape factors
-        const roofType = roofTypes.find(rt => rt.type === roofParams.type);
-        if (!roofType) return 1.0;
-
-        // Use the balanced shape factor as the base accumulation factor
-        // In NBC 2020, this represents the basic roof shape factor
-        return roofType.shapeFactors.balanced;
+        // For basic snow load calculator, Ca is always 1.0
+        // This represents the basic roof accumulation factor per NBC 2020
+        return 1.0;
     };
 
     const calculateSnowLoads = () => {
@@ -416,8 +320,6 @@ export default function SnowLoadCalculator() {
         const factors: CalculationFactors = { Is_uls, Is_sls, Cb, Cw, Cs, Ca, gamma, lc, roofShapeFactor: Ca };
         setCalculationFactors(factors);
 
-        // Get the roof type for shape factors
-        const roofType = roofTypes.find(rt => rt.type === roofParams.type);
 
         // NBC 2020 Formula: S = Is * [Ss * (Cb * Cw * Cs * Ca) + Sr]
         const snowLoad_uls = Is_uls * (Ss * (Cb * Cw * Cs * Ca) + Sr);
@@ -425,72 +327,22 @@ export default function SnowLoadCalculator() {
 
         const cases: SnowLoadCase[] = [{
             id: "nbc-balanced-uls",
-            name: "NBC 2020 Snow Load - Balanced (ULS)",
+            name: "NBC 2020 Snow Load - (ULS)",
             description: `S = I_s \\times [S_s \\times (C_b \\times C_w \\times C_s \\times C_a) + S_r] = ${Is_uls.toFixed(2)} \\times [${Ss} \\times (${Cb.toFixed(3)} \\times ${Cw} \\times ${Cs.toFixed(2)} \\times ${Ca}) + ${Sr}]`,
             loadValue: snowLoad_uls,
             designCase: "uls",
-            isBalanced: true,
+
             distribution: "uniform"
         }, {
             id: "nbc-balanced-sls",
-            name: "NBC 2020 Snow Load - Balanced (SLS)",
+            name: "NBC 2020 Snow Load - (SLS)",
             description: `S = I_s \\times [S_s \\times (C_b \\times C_w \\times C_s \\times C_a) + S_r] = ${Is_sls.toFixed(2)} \\times [${Ss} \\times (${Cb.toFixed(3)} \\times ${Cw} \\times ${Cs.toFixed(2)} \\times ${Ca}) + ${Sr}]`,
             loadValue: snowLoad_sls,
             designCase: "sls",
-            isBalanced: true,
+
             distribution: "uniform"
         }];
 
-        // Add unbalanced load cases for sloped roofs
-        if (roofType?.shapeFactors.unbalanced && roofParams.slope > 0 && roofParams.slope <= 70) {
-            const [lowShapeFactor, highShapeFactor] = roofType.shapeFactors.unbalanced;
-
-            // Calculate unbalanced loads using different shape factors
-            const lowSideLoad_uls = Is_uls * (Ss * (Cb * Cw * Cs * lowShapeFactor) + Sr);
-            const highSideLoad_uls = Is_uls * (Ss * (Cb * Cw * Cs * highShapeFactor) + Sr);
-            const lowSideLoad_sls = Is_sls * (Ss * (Cb * Cw * Cs * lowShapeFactor) + Sr);
-            const highSideLoad_sls = Is_sls * (Ss * (Cb * Cw * Cs * highShapeFactor) + Sr);
-
-            cases.push({
-                id: "nbc-unbalanced-low-uls",
-                name: "NBC 2020 Snow Load - Windward Side (ULS)",
-                description: `Reduced load on windward side (shape factor = ${lowShapeFactor}): ${lowSideLoad_uls.toFixed(2)} kPa`,
-                loadValue: lowSideLoad_uls,
-                designCase: "uls",
-                isBalanced: false,
-                distribution: "triangular"
-            });
-
-            cases.push({
-                id: "nbc-unbalanced-high-uls",
-                name: "NBC 2020 Snow Load - Leeward Side (ULS)",
-                description: `Increased load on leeward side (shape factor = ${highShapeFactor}): ${highSideLoad_uls.toFixed(2)} kPa`,
-                loadValue: highSideLoad_uls,
-                designCase: "uls",
-                isBalanced: false,
-                distribution: "triangular"
-            });
-
-            cases.push({
-                id: "nbc-unbalanced-low-sls",
-                name: "NBC 2020 Snow Load - Windward Side (SLS)",
-                description: `Reduced load on windward side (shape factor = ${lowShapeFactor}): ${lowSideLoad_sls.toFixed(2)} kPa`,
-                loadValue: lowSideLoad_sls,
-                designCase: "sls",
-                isBalanced: false,
-                distribution: "triangular"
-            });
-
-            cases.push({
-                id: "nbc-unbalanced-high-sls",
-                name: "NBC 2020 Snow Load - Leeward Side (SLS)",
-                description: `Increased load on leeward side (shape factor = ${highShapeFactor}): ${highSideLoad_sls.toFixed(2)} kPa`,
-                loadValue: highSideLoad_sls,
-                designCase: "sls",
-                isBalanced: false,
-                distribution: "triangular"
-            });
-        }
 
         setSnowLoadCases(cases);
         setShowResults(true);
@@ -513,19 +365,15 @@ export default function SnowLoadCalculator() {
     };
 
     const resetCalculator = () => {
-        setSelectedCalculator("");
-        setStep(0);
+        setStep(1);
         setSelectedProvince("");
         setSelectedLocation(null);
         setCustomLocation({ name: "", groundSnowLoad: "", rainLoad: "" });
         setRoofParams({
-            type: "flat",
             length: 20,
             width: 15,
             slope: 0,
             height: 6,
-            exposure: "normal",
-            hasObstructions: false,
             isSlippery: false,
             terrainType: "open"
         });
@@ -701,7 +549,6 @@ export default function SnowLoadCalculator() {
                 <div class="section">
                     <h3>2. Building Parameters</h3>
                     <table>
-                        <tr><td><strong>Roof Type</strong></td><td class="value">${roofTypes.find(rt => rt.type === roofParams.type)?.name}</td></tr>
                         <tr><td><strong>Dimensions</strong></td><td class="value">${roofParams.length} × ${roofParams.width} m</td></tr>
                         <tr><td><strong>Roof Area</strong></td><td class="value">${(roofParams.length * roofParams.width).toFixed(1)} m²</td></tr>
                         <tr><td><strong>Slope</strong></td><td class="value">${roofParams.slope}°</td></tr>
@@ -820,8 +667,8 @@ export default function SnowLoadCalculator() {
 
                     <div class="calc-step">
                         <h4>Step 7: Accumulation Factor (Ca)</h4>
-                        <p><strong>Roof type:</strong> ${roofTypes.find(rt => rt.type === roofParams.type)?.name}</p>
-                        <p><strong>Roof shape factor incorporated into Ca:</strong></p>
+                        <p><strong>For basic snow load calculator:</strong> The accumulation factor is set to 1.0</p>
+                        <p><strong>This represents the basic roof accumulation factor per NBC 2020:</strong></p>
                         $$C_a = ${calculationFactors.Ca.toFixed(2)}$$
                     </div>
 
@@ -950,89 +797,27 @@ export default function SnowLoadCalculator() {
                 </div>
 
                 {/* Progress Steps */}
-                {step > 0 && (
-                    <div className="mb-8">
-                        <div className="flex justify-center space-x-4">
-                            {[1, 2, 3, 4].map((stepNum) => (
-                                <div key={stepNum} className={`flex items-center ${stepNum < 4 ? 'mr-4' : ''}`}>
-                                    <div className={`w-8 h-8 rounded-full flex items-center justify-center font-semibold ${step >= stepNum ? 'bg-orange-500 text-white' : 'bg-gray-700 text-gray-400'
-                                        }`}>
-                                        {stepNum}
-                                    </div>
-                                    <span className={`ml-2 ${step >= stepNum ? 'text-orange-500' : 'text-gray-400'}`}>
-                                        {stepNum === 1 && "Location"}
-                                        {stepNum === 2 && "Roof Type"}
-                                        {stepNum === 3 && "Parameters"}
-                                        {stepNum === 4 && "Results"}
-                                    </span>
-                                    {stepNum < 4 && <div className="w-8 h-px bg-gray-700 ml-4"></div>}
+                <div className="mb-8">
+                    <div className="flex justify-center space-x-4">
+                        {[1, 2, 3].map((stepNum) => (
+                            <div key={stepNum} className={`flex items-center ${stepNum < 3 ? 'mr-4' : ''}`}>
+                                <div className={`w-8 h-8 rounded-full flex items-center justify-center font-semibold ${step >= stepNum ? 'bg-orange-500 text-white' : 'bg-gray-700 text-gray-400'
+                                    }`}>
+                                    {stepNum}
                                 </div>
-                            ))}
-                        </div>
+                                <span className={`ml-2 ${step >= stepNum ? 'text-orange-500' : 'text-gray-400'}`}>
+                                    {stepNum === 1 && "Location"}
+                                    {stepNum === 2 && "Parameters"}
+                                    {stepNum === 3 && "Results"}
+                                </span>
+                                {stepNum < 3 && <div className="w-8 h-px bg-gray-700 ml-4"></div>}
+                            </div>
+                        ))}
                     </div>
-                )}
-
-                {/* Calculator Selection Step */}
-                {step === 0 && (
-                    <div className="engineering-card">
-                        <h2 className="text-2xl font-bold text-white dark:text-white light:text-gray-900 mb-6">
-                            Select Calculator Type
-                        </h2>
-                        <p className="text-gray-400 mb-8">
-                            Choose the appropriate snow load calculator based on your roof configuration and project requirements.
-                        </p>
-
-                        <div className="grid md:grid-cols-2 gap-8">
-                            {calculatorTypes.map((calcType) => (
-                                <button
-                                    key={calcType.id}
-                                    className={`p-6 border-2 rounded-lg cursor-pointer transition-all text-left ${selectedCalculator === calcType.id
-                                        ? 'border-orange-500 bg-orange-500 bg-opacity-10'
-                                        : 'border-gray-700 hover:border-gray-600'
-                                        }`}
-                                    onClick={() => setSelectedCalculator(calcType.id)}
-                                >
-                                    <div className="flex items-center mb-4">
-                                        <calcType.icon className="h-8 w-8 text-orange-500 mr-3" />
-                                        <h3 className="text-xl font-semibold text-white">{calcType.name}</h3>
-                                    </div>
-
-                                    <p className="text-gray-400 mb-4">{calcType.description}</p>
-
-                                    <div className="mb-4">
-                                        <p className="text-sm font-medium text-gray-300 mb-2">NBC Reference:</p>
-                                        <p className="text-sm text-gray-400">{calcType.nbcReference}</p>
-                                    </div>
-
-                                    <div>
-                                        <p className="text-sm font-medium text-gray-300 mb-2">Features:</p>
-                                        <ul className="text-sm text-gray-400 space-y-1">
-                                            {calcType.features.map((feature, index) => (
-                                                <li key={index} className="flex items-center">
-                                                    <span className="w-1.5 h-1.5 bg-orange-500 rounded-full mr-2"></span>
-                                                    {feature}
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </button>
-                            ))}
-                        </div>
-
-                        <div className="flex justify-end mt-8">
-                            <button
-                                onClick={() => setStep(1)}
-                                disabled={!selectedCalculator}
-                                className="px-6 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600 disabled:bg-gray-600 disabled:cursor-not-allowed transition-colors"
-                            >
-                                Continue to {calculatorTypes.find(c => c.id === selectedCalculator)?.name || "Calculator"}
-                            </button>
-                        </div>
-                    </div>
-                )}
+                </div>
 
                 {/* Basic Snow Load Calculator */}
-                {selectedCalculator === "basic" && (
+                {(
                     <>
                         {/* Step 1: Location Selection */}
                         {step === 1 && (
@@ -1180,56 +965,16 @@ export default function SnowLoadCalculator() {
                                         disabled={!selectedLocation && !customLocation.groundSnowLoad}
                                         className="px-6 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600 disabled:bg-gray-600 disabled:cursor-not-allowed transition-colors"
                                     >
-                                        Next: Select Roof Type
-                                    </button>
-                                </div>
-                            </div>
-                        )}
-
-                        {/* Step 2: Roof Type Selection */}
-                        {step === 2 && (
-                            <div className="engineering-card">
-                                <h2 className="text-2xl font-bold text-white dark:text-white light:text-gray-900 mb-6">Select Roof Type</h2>
-
-                                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                    {roofTypes.map((roofType) => (
-                                        <button
-                                            key={roofType.type}
-                                            onClick={() => setRoofParams({ ...roofParams, type: roofType.type })}
-                                            className={`p-6 border-2 rounded-lg cursor-pointer transition-all text-left ${roofParams.type === roofType.type
-                                                ? 'border-orange-500 bg-orange-500 bg-opacity-10'
-                                                : 'border-gray-700 hover:border-gray-600'
-                                                }`}
-                                        >
-                                            <roofType.icon className="h-12 w-12 text-orange-500 mb-4" />
-                                            <h3 className="text-lg font-semibold text-white mb-2">{roofType.name}</h3>
-                                            <p className="text-gray-400 text-sm">{roofType.description}</p>
-                                        </button>
-                                    ))}
-                                </div>
-
-                                <div className="flex justify-between mt-8">
-                                    <button
-                                        onClick={() => {
-                                            setSelectedCalculator("");
-                                            setStep(0);
-                                        }}
-                                        className="px-6 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-600 transition-colors"
-                                    >
-                                        Back to Calculator Selection
-                                    </button>
-                                    <button
-                                        onClick={() => setStep(3)}
-                                        className="px-6 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600 transition-colors"
-                                    >
                                         Next: Set Parameters
                                     </button>
                                 </div>
                             </div>
                         )}
 
-                        {/* Step 3: Parameters */}
-                        {step === 3 && (
+
+
+                        {/* Step 2: Parameters */}
+                        {step === 2 && (
                             <div className="engineering-card">
                                 <h2 className="text-2xl font-bold text-white dark:text-white light:text-gray-900 mb-6">Roof Parameters</h2>
 
@@ -1338,54 +1083,13 @@ export default function SnowLoadCalculator() {
                                                     Slippery roof surface (metal, plastic, etc.)
                                                 </label>
                                             </div>
-
-                                            <div className="flex items-center">
-                                                <input
-                                                    type="checkbox"
-                                                    id="obstructions"
-                                                    checked={roofParams.hasObstructions}
-                                                    onChange={(e) => setRoofParams({ ...roofParams, hasObstructions: e.target.checked })}
-                                                    className="h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300 rounded"
-                                                />
-                                                <label htmlFor="obstructions" className="ml-2 text-sm text-gray-300">
-                                                    Roof has obstructions (equipment, parapets, etc.)
-                                                </label>
-                                            </div>
-
-                                            <div className="flex items-center">
-                                                <input
-                                                    type="checkbox"
-                                                    id="adjacent"
-                                                    checked={roofParams.adjacentBuilding}
-                                                    onChange={(e) => setRoofParams({ ...roofParams, adjacentBuilding: e.target.checked })}
-                                                    className="h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300 rounded"
-                                                />
-                                                <label htmlFor="adjacent" className="ml-2 text-sm text-gray-300">
-                                                    Adjacent to higher building
-                                                </label>
-                                            </div>
                                         </div>
-
-                                        {roofParams.hasObstructions && (
-                                            <div>
-                                                <label htmlFor="parapet-height" className="block text-sm font-medium text-gray-300 mb-2">
-                                                    Parapet Height (m)
-                                                </label>
-                                                <input
-                                                    id="parapet-height"
-                                                    type="number"
-                                                    value={roofParams.parapetHeight || 0}
-                                                    onChange={(e) => setRoofParams({ ...roofParams, parapetHeight: parseFloat(e.target.value) || 0 })}
-                                                    className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-orange-500"
-                                                />
-                                            </div>
-                                        )}
                                     </div>
                                 </div>
 
                                 <div className="flex justify-between mt-8">
                                     <button
-                                        onClick={() => setStep(2)}
+                                        onClick={() => setStep(1)}
                                         className="px-6 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-600 transition-colors"
                                     >
                                         Back
@@ -1393,7 +1097,7 @@ export default function SnowLoadCalculator() {
                                     <button
                                         onClick={() => {
                                             calculateSnowLoads();
-                                            setStep(4);
+                                            setStep(3);
                                         }}
                                         className="px-6 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600 transition-colors"
                                     >
@@ -1403,8 +1107,8 @@ export default function SnowLoadCalculator() {
                             </div>
                         )}
 
-                        {/* Step 4: Results */}
-                        {step === 4 && showResults && (
+                        {/* Step 3: Results */}
+                        {step === 3 && showResults && (
                             <div className="engineering-card">
                                 <div className="flex justify-between items-center mb-6">
                                     <h2 className="text-2xl font-bold text-white dark:text-white light:text-gray-900">Calculation Results</h2>
@@ -1672,10 +1376,10 @@ export default function SnowLoadCalculator() {
                                                 <h4 className="text-white font-semibold mb-4">Step 7: Accumulation Factor (Ca)</h4>
                                                 <div className="space-y-3">
                                                     <div className="text-gray-300">
-                                                        Roof type: <strong>{roofTypes.find(rt => rt.type === roofParams.type)?.name}</strong>
+                                                        For basic snow load calculator, the accumulation factor is set to 1.0
                                                     </div>
                                                     <div className="text-gray-300">
-                                                        Roof shape factor incorporated into Ca
+                                                        This represents the basic roof accumulation factor per NBC 2020
                                                     </div>
                                                     <div
                                                         className="text-gray-300"
@@ -1797,7 +1501,7 @@ export default function SnowLoadCalculator() {
 
                                 <div className="flex justify-between mt-8">
                                     <button
-                                        onClick={() => setStep(3)}
+                                        onClick={() => setStep(2)}
                                         className="px-6 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-600 transition-colors"
                                     >
                                         Back to Parameters
@@ -1808,32 +1512,7 @@ export default function SnowLoadCalculator() {
                     </>
                 )}
 
-                {/* Stepped Roof Calculator */}
-                {selectedCalculator === "stepped" && (
-                    <div className="engineering-card">
-                        <h2 className="text-2xl font-bold text-white dark:text-white light:text-gray-900 mb-6">
-                            Stepped Roof Calculator
-                        </h2>
-                        <div className="text-center py-12">
-                            <BuildingOfficeIcon className="h-16 w-16 text-orange-500 mx-auto mb-4" />
-                            <p className="text-gray-400 text-lg mb-4">
-                                Stepped Roof Calculator is under development
-                            </p>
-                            <p className="text-gray-500 mb-6">
-                                This calculator will handle multi-level roofs with snow drifting calculations per NBC 2020 Articles 4.1.6.14-4.1.6.16
-                            </p>
-                            <button
-                                onClick={() => {
-                                    setSelectedCalculator("");
-                                    setStep(0);
-                                }}
-                                className="px-6 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600 transition-colors"
-                            >
-                                Back to Calculator Selection
-                            </button>
-                        </div>
-                    </div>
-                )}
+
             </div>
         </div>
     );
