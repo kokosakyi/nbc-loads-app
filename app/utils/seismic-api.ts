@@ -2,6 +2,9 @@ import { GraphQLClient, gql } from 'graphql-request';
 
 const client = new GraphQLClient('https://www.earthquakescanada.nrcan.gc.ca/api/canshm/graphql');
 
+// Site class enum values as per the GraphQL API
+export type CanSHM6SiteClass = 'A' | 'B' | 'C' | 'D' | 'E';
+
 // Updated interfaces to match the actual API schema
 export interface CanSHM6SiteDesignation {
   sa0p05?: number;
@@ -98,7 +101,7 @@ export const MAJOR_CITIES: LocationSearchResult[] = [
 
 // GraphQL query for site class designations
 const GET_SEISMIC_DATA_BY_SITE_CLASS = gql`
-  query GetSeismicDataBySiteClass($latitude: Float!, $longitude: Float!, $siteClass: String!, $poe50: [Float!]) {
+  query GetSeismicDataBySiteClass($latitude: Float!, $longitude: Float!, $siteClass: CanSHM6SiteClass!, $poe50: [Float!]) {
     NBC2020(latitude: $latitude, longitude: $longitude) {
       geometry {
         type
@@ -123,7 +126,6 @@ const GET_SEISMIC_DATA_BY_SITE_CLASS = gql`
         foe
         pga
         pgv
-        siteClass
       }
     }
   }
@@ -264,19 +266,16 @@ const FALLBACK_SEISMIC_DATA: SeismicHazardData[] = [
 export async function getSeismicHazardDataBySiteClass(
   latitude: number, 
   longitude: number, 
-  siteClass: string,
+  siteClass: CanSHM6SiteClass,
   returnPeriods: number[] = [2.0]
 ): Promise<SeismicHazardData[]> {
   try {
-    console.log(`Fetching seismic data for lat: ${latitude}, lng: ${longitude}, siteClass: X${siteClass}`);
-    
-    // Map site class to API format (A -> XA, B -> XB, etc.)
-    const apiSiteClass = `X${siteClass}`;
+    console.log(`Fetching seismic data for lat: ${latitude}, lng: ${longitude}, siteClass: ${siteClass}`);
     
     const variables = {
       latitude,
       longitude,
-      siteClass: apiSiteClass,
+      siteClass: siteClass, // Pass site class directly (A, B, C, D, E)
       poe50: returnPeriods
     };
 
@@ -416,7 +415,7 @@ export async function geocodeAddress(address: string): Promise<LocationSearchRes
   }
 }
 
-function getSiteClassFromVs30(vs30: number): string {
+function getSiteClassFromVs30(vs30: number): CanSHM6SiteClass {
   if (vs30 >= 1500) return "A";
   if (vs30 >= 760) return "B";
   if (vs30 >= 360) return "C";
@@ -435,7 +434,7 @@ export async function getSeismicHazardData(
   return getSeismicHazardDataBySiteClass(latitude, longitude, siteClass, returnPeriods);
 }
 
-function getVs30FromSiteClass(siteClass: string): number {
+function getVs30FromSiteClass(siteClass: CanSHM6SiteClass): number {
   switch (siteClass) {
     case 'A': return 1500;  // Hard rock
     case 'B': return 1100;  // Rock
@@ -450,7 +449,7 @@ function processSiteDesignations(
   nbcData: CanSHM6Point, 
   latitude: number, 
   longitude: number, 
-  siteClass: string, 
+  siteClass: CanSHM6SiteClass, 
   returnPeriods: number[], 
   dataType: 'siteClass' | 'vs30'
 ): SeismicHazardData[] {

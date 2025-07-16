@@ -13,8 +13,80 @@ import {
     geocodeAddress,
     MAJOR_CITIES,
     type SeismicHazardData,
-    type LocationSearchResult
+    type LocationSearchResult,
+    type CanSHM6SiteClass
 } from "~/utils/seismic-api";
+import canadianCitiesGeoData from "~/data/canadian_cities_geo_data.json";
+
+// Interfaces for Canadian geographical data
+interface CanadianCity {
+    province_code: string;
+    province_name: string;
+    city_name: string;
+    latitude: number;
+    longitude: number;
+}
+
+interface GeoDataFile {
+    metadata: {
+        description: string;
+        total_cities: number;
+        data_year: number;
+    };
+    cities: CanadianCity[];
+}
+
+interface ProvinceOption {
+    code: string;
+    name: string;
+    cityCount: number;
+}
+
+interface CityOption {
+    name: string;
+    latitude: number;
+    longitude: number;
+    province_code: string;
+    province_name: string;
+}
+
+// Process the geographical data
+const geoData = canadianCitiesGeoData as GeoDataFile;
+
+// Extract unique provinces
+const getProvinces = (): ProvinceOption[] => {
+    const provinceMap = new Map<string, ProvinceOption>();
+
+    geoData.cities.forEach(city => {
+        if (!provinceMap.has(city.province_code)) {
+            provinceMap.set(city.province_code, {
+                code: city.province_code,
+                name: city.province_name,
+                cityCount: 0
+            });
+        }
+        const province = provinceMap.get(city.province_code)!;
+        province.cityCount++;
+    });
+
+    return Array.from(provinceMap.values()).sort((a, b) => a.name.localeCompare(b.name));
+};
+
+// Get cities for a specific province
+const getCitiesForProvince = (provinceCode: string): CityOption[] => {
+    return geoData.cities
+        .filter(city => city.province_code === provinceCode)
+        .map(city => ({
+            name: city.city_name,
+            latitude: city.latitude,
+            longitude: city.longitude,
+            province_code: city.province_code,
+            province_name: city.province_name
+        }))
+        .sort((a, b) => a.name.localeCompare(b.name));
+};
+
+const provinces = getProvinces();
 
 export const meta: MetaFunction = () => {
     return [
@@ -69,7 +141,7 @@ export async function action({ request }: ActionFunctionArgs) {
     if (intent === "get-seismic-data") {
         const lat = formData.get("latitude") as string;
         const lng = formData.get("longitude") as string;
-        const siteClass = formData.get("siteClass") as string || "C";
+        const siteClass = (formData.get("siteClass") as string || "C") as CanSHM6SiteClass;
         const returnPeriods = formData.get("returnPeriods") as string || "2.0";
 
         if (lat && lng) {
@@ -236,7 +308,13 @@ export default function SeismicLoadCalculator() {
     const actionData = useActionData<typeof action>();
     const submit = useSubmit();
 
-    const [selectedCity, setSelectedCity] = useState<typeof MAJOR_CITIES[0] | null>(null);
+    // Province and city selection state
+    const [selectedProvince, setSelectedProvince] = useState<ProvinceOption | null>(null);
+    const [selectedCity, setSelectedCity] = useState<CityOption | null>(null);
+    const [availableCities, setAvailableCities] = useState<CityOption[]>([]);
+
+    // Legacy major cities selection (kept for fallback)
+    const [selectedMajorCity, setSelectedMajorCity] = useState<typeof MAJOR_CITIES[0] | null>(null);
     const [customLocation, setCustomLocation] = useState({
         latitude: '',
         longitude: '',
@@ -339,18 +417,45 @@ export default function SeismicLoadCalculator() {
     const fetchSeismicData = (latitude: number, longitude: number) => {
         setIsLoading(true);
 
+        // Negate longitude as required for the API
+        const negatedLongitude = -Math.abs(longitude);
+
         const formData = new FormData();
         formData.append('intent', 'get-seismic-data');
         formData.append('latitude', latitude.toString());
-        formData.append('longitude', longitude.toString());
+        formData.append('longitude', negatedLongitude.toString());
         formData.append('siteClass', buildingParams.siteClass);
         formData.append('returnPeriods', '2.0');
 
         submit(formData, { method: "post" });
     };
 
-    const handleCitySelect = (city: typeof MAJOR_CITIES[0]) => {
+    // Handle province selection
+    const handleProvinceSelect = (province: ProvinceOption) => {
+        setSelectedProvince(province);
+        setSelectedCity(null);
+        setSelectedMajorCity(null);
+        setCustomLocation({ latitude: '', longitude: '', name: '' });
+        setAddressSearch('');
+
+        const cities = getCitiesForProvince(province.code);
+        setAvailableCities(cities);
+    };
+
+    // Handle city selection
+    const handleCitySelect = (city: CityOption) => {
         setSelectedCity(city);
+        setSelectedMajorCity(null);
+        setCustomLocation({ latitude: '', longitude: '', name: '' });
+        setAddressSearch('');
+        fetchSeismicData(city.latitude, city.longitude);
+    };
+
+    const handleMajorCitySelect = (city: typeof MAJOR_CITIES[0]) => {
+        setSelectedMajorCity(city);
+        setSelectedProvince(null);
+        setSelectedCity(null);
+        setAvailableCities([]);
         setCustomLocation({ latitude: '', longitude: '', name: '' });
         setAddressSearch('');
         fetchSeismicData(city.latitude, city.longitude);
@@ -655,15 +760,81 @@ export default function SeismicLoadCalculator() {
                             </div>
                         )}
 
-                        {/* Major Cities */}
+                        {/* Province and City Selection */}
                         <div className="mb-8">
-                            <h3 className="text-lg font-semibold mb-4">Major Canadian Cities</h3>
+                            <h3 className="text-lg font-semibold mb-4">Select Canadian Province and City</h3>
+
+                            {/* Province Selector */}
+                            <div className="mb-6">
+                                <label htmlFor="province-select" className="block text-sm font-medium mb-2">Province/Territory</label>
+                                <select
+                                    id="province-select"
+                                    value={selectedProvince?.code || ''}
+                                    onChange={(e) => {
+                                        const province = provinces.find(p => p.code === e.target.value);
+                                        if (province) handleProvinceSelect(province);
+                                    }}
+                                    className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+                                >
+                                    <option value="">Select a province/territory...</option>
+                                    {provinces.map((province) => (
+                                        <option key={province.code} value={province.code}>
+                                            {province.name} ({province.cityCount} cities)
+                                        </option>
+                                    ))}
+                                </select>
+                            </div>
+
+                            {/* City Selector */}
+                            {selectedProvince && availableCities.length > 0 && (
+                                <div className="mb-6">
+                                    <label htmlFor="city-select" className="block text-sm font-medium mb-2">
+                                        City in {selectedProvince.name}
+                                    </label>
+                                    <select
+                                        id="city-select"
+                                        value={selectedCity?.name || ''}
+                                        onChange={(e) => {
+                                            const city = availableCities.find(c => c.name === e.target.value);
+                                            if (city) handleCitySelect(city);
+                                        }}
+                                        className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+                                    >
+                                        <option value="">Select a city...</option>
+                                        {availableCities.map((city) => (
+                                            <option key={`${city.name}-${city.province_code}`} value={city.name}>
+                                                {city.name}
+                                            </option>
+                                        ))}
+                                    </select>
+                                </div>
+                            )}
+
+                            {/* Selected City Info */}
+                            {selectedCity && (
+                                <div className="bg-gray-800 rounded-lg p-4">
+                                    <h4 className="font-semibold text-orange-500 mb-2">Selected Location</h4>
+                                    <div className="text-sm">
+                                        <p><strong>City:</strong> {selectedCity.name}</p>
+                                        <p><strong>Province:</strong> {selectedCity.province_name}</p>
+                                        <p><strong>Coordinates:</strong> {selectedCity.latitude.toFixed(4)}, {(-Math.abs(selectedCity.longitude)).toFixed(4)}</p>
+                                        <p className="text-xs text-gray-400 mt-1">
+                                            (Longitude negated for API compatibility)
+                                        </p>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+
+                        {/* Major Cities (Alternative Option) */}
+                        <div className="mb-8 border-t border-gray-700 pt-8">
+                            <h3 className="text-lg font-semibold mb-4">Or Select from Major Cities</h3>
                             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                                 {MAJOR_CITIES.map((city) => (
                                     <button
                                         key={`${city.name}-${city.province}`}
-                                        onClick={() => handleCitySelect(city)}
-                                        className={`p-4 border-2 rounded-lg text-left transition-all ${selectedCity?.name === city.name
+                                        onClick={() => handleMajorCitySelect(city)}
+                                        className={`p-4 border-2 rounded-lg text-left transition-all ${selectedMajorCity?.name === city.name
                                             ? 'border-orange-500 bg-orange-500/10'
                                             : 'border-gray-700 hover:border-gray-600'
                                             }`}
@@ -795,41 +966,43 @@ export default function SeismicLoadCalculator() {
 
                                 {/* Main seismic parameters */}
                                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+
                                     <div className="text-center bg-gray-700 rounded-lg p-4">
-                                        <div className="text-2xl font-bold text-orange-500">{currentSeismicData.pga.toFixed(3)}</div>
-                                        <div className="text-sm text-gray-400">PGA (g)</div>
-                                    </div>
-                                    <div className="text-center bg-gray-700 rounded-lg p-4">
-                                        <div className="text-2xl font-bold text-orange-500">{currentSeismicData.pgv?.toFixed(3) || 'N/A'}</div>
-                                        <div className="text-sm text-gray-400">PGV (m/s)</div>
-                                    </div>
-                                    <div className="text-center bg-gray-700 rounded-lg p-4">
-                                        <div className="text-2xl font-bold text-orange-500">{currentSeismicData.sa0p2.toFixed(3)}</div>
+                                        <div className="text-2xl font-bold text-orange-500">{currentSeismicData.sa0p2.toFixed(4)}</div>
                                         <div className="text-sm text-gray-400">Sa(0.2s) (g)</div>
                                     </div>
                                     <div className="text-center bg-gray-700 rounded-lg p-4">
-                                        <div className="text-2xl font-bold text-orange-500">{currentSeismicData.sa1p0.toFixed(3)}</div>
-                                        <div className="text-sm text-gray-400">Sa(1.0s) (g)</div>
-                                    </div>
-                                </div>
-
-                                {/* Additional spectral accelerations */}
-                                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-                                    <div className="text-center bg-gray-700 rounded-lg p-4">
-                                        <div className="text-2xl font-bold text-orange-500">{currentSeismicData.sa0p5?.toFixed(3) || 'N/A'}</div>
+                                        <div className="text-2xl font-bold text-orange-500">{currentSeismicData.sa0p5?.toFixed(4) || 'N/A'}</div>
                                         <div className="text-sm text-gray-400">Sa(0.5s) (g)</div>
                                     </div>
                                     <div className="text-center bg-gray-700 rounded-lg p-4">
-                                        <div className="text-2xl font-bold text-orange-500">{currentSeismicData.sa2p0.toFixed(3)}</div>
-                                        <div className="text-sm text-gray-400">Sa(2.0s) (g)</div>
+                                        <div className="text-2xl font-bold text-orange-500">{currentSeismicData.sa1p0.toFixed(4)}</div>
+                                        <div className="text-sm text-gray-400">Sa(1.0s) (g)</div>
                                     </div>
                                     <div className="text-center bg-gray-700 rounded-lg p-4">
-                                        <div className="text-2xl font-bold text-orange-500">{currentSeismicData.sa5p0?.toFixed(3) || 'N/A'}</div>
+                                        <div className="text-2xl font-bold text-orange-500">{currentSeismicData.sa2p0.toFixed(4)}</div>
+                                        <div className="text-sm text-gray-400">Sa(2.0s) (g)</div>
+                                    </div>
+                                </div>
+                                {/* Additional spectral accelerations */}
+                                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+
+
+                                    <div className="text-center bg-gray-700 rounded-lg p-4">
+                                        <div className="text-2xl font-bold text-orange-500">{currentSeismicData.sa5p0?.toFixed(4) || 'N/A'}</div>
                                         <div className="text-sm text-gray-400">Sa(5.0s) (g)</div>
                                     </div>
                                     <div className="text-center bg-gray-700 rounded-lg p-4">
-                                        <div className="text-2xl font-bold text-orange-500">{currentSeismicData.sa10p0?.toFixed(3) || 'N/A'}</div>
+                                        <div className="text-2xl font-bold text-orange-500">{currentSeismicData.sa10p0?.toFixed(4) || 'N/A'}</div>
                                         <div className="text-sm text-gray-400">Sa(10.0s) (g)</div>
+                                    </div>
+                                    <div className="text-center bg-gray-700 rounded-lg p-4">
+                                        <div className="text-2xl font-bold text-orange-500">{currentSeismicData.pga.toFixed(4)}</div>
+                                        <div className="text-sm text-gray-400">PGA (g)</div>
+                                    </div>
+                                    <div className="text-center bg-gray-700 rounded-lg p-4">
+                                        <div className="text-2xl font-bold text-orange-500">{currentSeismicData.pgv?.toFixed(4) || 'N/A'}</div>
+                                        <div className="text-sm text-gray-400">PGV (m/s)</div>
                                     </div>
                                 </div>
 

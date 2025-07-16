@@ -1,0 +1,4762 @@
+{
+  "metadata": {
+    "description": "Geographic coordinates for Canadian cities from SHD-VAS 2020 data",
+    "total_cities": 679,
+    "data_year": 2020
+  },
+  "cities": [
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Athabasca",
+      "latitude": 54.72,
+      "longitude": 113.28
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Banff",
+      "latitude": 51.17,
+      "longitude": 115.57
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Barrhead",
+      "latitude": 54.13,
+      "longitude": 114.4
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Beaverlodge",
+      "latitude": 55.22,
+      "longitude": 119.43
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Brooks",
+      "latitude": 50.58,
+      "longitude": 111.88
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Calgary",
+      "latitude": 51.05,
+      "longitude": 114.08
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Campsie",
+      "latitude": 54.13,
+      "longitude": 114.65
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Camrose",
+      "latitude": 53.02,
+      "longitude": 112.83
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Canmore",
+      "latitude": 51.09,
+      "longitude": 115.35
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Cardston",
+      "latitude": 49.2,
+      "longitude": 113.3
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Claresholm",
+      "latitude": 50.03,
+      "longitude": 113.58
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "ColdLake",
+      "latitude": 54.45,
+      "longitude": 110.17
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Coleman",
+      "latitude": 49.63,
+      "longitude": 114.5
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Coronation",
+      "latitude": 52.08,
+      "longitude": 111.45
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Cowley",
+      "latitude": 49.57,
+      "longitude": 114.08
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Drumheller",
+      "latitude": 51.47,
+      "longitude": 112.7
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Edmonton",
+      "latitude": 53.55,
+      "longitude": 113.47
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Edson",
+      "latitude": 53.58,
+      "longitude": 116.43
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "EmbarrasPortage",
+      "latitude": 58.45,
+      "longitude": 111.47
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Fairview",
+      "latitude": 56.07,
+      "longitude": 118.38
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "FortMacLeod",
+      "latitude": 49.72,
+      "longitude": 113.42
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "FortMcMurray",
+      "latitude": 56.73,
+      "longitude": 111.38
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "FortSaskatchewan",
+      "latitude": 53.72,
+      "longitude": 113.22
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "FortVermilion",
+      "latitude": 58.4,
+      "longitude": 116.0
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "GrandePrairie",
+      "latitude": 55.17,
+      "longitude": 118.8
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Habay",
+      "latitude": 58.83,
+      "longitude": 118.73
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Hardisty",
+      "latitude": 52.67,
+      "longitude": 111.3
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "HighRiver",
+      "latitude": 50.58,
+      "longitude": 113.87
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Hinton",
+      "latitude": 53.4,
+      "longitude": 117.58
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Jasper",
+      "latitude": 52.88,
+      "longitude": 118.08
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "KegRiver",
+      "latitude": 57.75,
+      "longitude": 117.62
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "LaclaBiche",
+      "latitude": 54.77,
+      "longitude": 111.97
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Lacombe",
+      "latitude": 52.47,
+      "longitude": 113.73
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Lethbridge",
+      "latitude": 49.7,
+      "longitude": 112.82
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Manning",
+      "latitude": 56.92,
+      "longitude": 117.62
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "MedicineHat",
+      "latitude": 50.05,
+      "longitude": 110.67
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "PeaceRiver",
+      "latitude": 56.23,
+      "longitude": 117.28
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "PincherCreek",
+      "latitude": 49.48,
+      "longitude": 113.95
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Ranfurly",
+      "latitude": 53.42,
+      "longitude": 111.68
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "RedDeer",
+      "latitude": 52.27,
+      "longitude": 113.8
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "RockyMountainHouse",
+      "latitude": 52.37,
+      "longitude": 114.92
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "SlaveLake",
+      "latitude": 55.28,
+      "longitude": 114.77
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Stettler",
+      "latitude": 52.32,
+      "longitude": 112.72
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "StonyPlain",
+      "latitude": 53.53,
+      "longitude": 114.0
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Suffield",
+      "latitude": 50.2,
+      "longitude": 111.17
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Taber",
+      "latitude": 49.78,
+      "longitude": 112.15
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "TurnerValley",
+      "latitude": 50.67,
+      "longitude": 114.28
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Valleyview",
+      "latitude": 55.07,
+      "longitude": 117.28
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Vegreville",
+      "latitude": 53.5,
+      "longitude": 112.05
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Vermilion",
+      "latitude": 53.37,
+      "longitude": 110.85
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Wagner",
+      "latitude": 55.35,
+      "longitude": 114.98
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Wainwright",
+      "latitude": 52.82,
+      "longitude": 110.87
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Wetaskiwin",
+      "latitude": 52.97,
+      "longitude": 113.37
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Whitecourt",
+      "latitude": 54.15,
+      "longitude": 115.68
+    },
+    {
+      "province_code": "AB",
+      "province_name": "Alberta",
+      "city_name": "Wimborne",
+      "latitude": 51.87,
+      "longitude": 113.58
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "100MileHouse",
+      "latitude": 51.65,
+      "longitude": 121.2833
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Abbotsford",
+      "latitude": 49.0517,
+      "longitude": 122.3289
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Agassiz",
+      "latitude": 49.23,
+      "longitude": 121.77
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Alberni",
+      "latitude": 49.27,
+      "longitude": 124.8
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Ashcroft",
+      "latitude": 50.72,
+      "longitude": 121.28
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Bamfield",
+      "latitude": 48.83,
+      "longitude": 125.13
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "BeattonRiver",
+      "latitude": 57.38,
+      "longitude": 121.4
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "BellaBella",
+      "latitude": 52.16,
+      "longitude": 128.14
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "BellaCoola",
+      "latitude": 52.37,
+      "longitude": 126.75
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "BurnabySimonFraserUniv_UnivSimonFraser",
+      "latitude": 49.28,
+      "longitude": 122.92
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "BurnsLake",
+      "latitude": 54.23,
+      "longitude": 125.75
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "CacheCreek",
+      "latitude": 50.8,
+      "longitude": 121.32
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "CampbellRiver",
+      "latitude": 50.02,
+      "longitude": 125.24
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Carmi",
+      "latitude": 49.5,
+      "longitude": 119.12
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Castlegar",
+      "latitude": 49.32,
+      "longitude": 117.67
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Chetwynd",
+      "latitude": 55.7,
+      "longitude": 121.63
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Chilliwack",
+      "latitude": 49.1667,
+      "longitude": 121.95
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Cloverdale",
+      "latitude": 49.1,
+      "longitude": 122.7333
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Comox",
+      "latitude": 49.68,
+      "longitude": 124.93
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Courtenay",
+      "latitude": 49.68,
+      "longitude": 124.98
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Cranbrook",
+      "latitude": 49.5,
+      "longitude": 115.77
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "CrescentValley",
+      "latitude": 49.45,
+      "longitude": 117.55
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Crofton",
+      "latitude": 48.87,
+      "longitude": 123.65
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "DawsonCreek",
+      "latitude": 55.77,
+      "longitude": 120.23
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "DeaseLake",
+      "latitude": 58.44,
+      "longitude": 130.0
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "DogCreek",
+      "latitude": 51.58,
+      "longitude": 122.3
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Duncan",
+      "latitude": 48.78,
+      "longitude": 123.7
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Elko",
+      "latitude": 49.3,
+      "longitude": 115.12
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Fernie",
+      "latitude": 49.5,
+      "longitude": 115.07
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "FortNelson",
+      "latitude": 58.83,
+      "longitude": 122.7
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "FortStJohn",
+      "latitude": 56.25,
+      "longitude": 120.85
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Glacier",
+      "latitude": 51.27,
+      "longitude": 117.52
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "GoldRiver",
+      "latitude": 49.78,
+      "longitude": 126.05
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Golden",
+      "latitude": 51.3,
+      "longitude": 116.97
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "GrandForks",
+      "latitude": 49.03,
+      "longitude": 118.45
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Greenwood",
+      "latitude": 49.1,
+      "longitude": 118.68
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Haney",
+      "latitude": 49.22,
+      "longitude": 122.6
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Hope",
+      "latitude": 49.38,
+      "longitude": 121.44
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "JordanRiver",
+      "latitude": 48.42,
+      "longitude": 124.05
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Kamloops",
+      "latitude": 50.67,
+      "longitude": 120.32
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Kaslo",
+      "latitude": 49.92,
+      "longitude": 116.92
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Kelowna",
+      "latitude": 49.88,
+      "longitude": 119.48
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Kimberley",
+      "latitude": 49.68,
+      "longitude": 115.98
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "KitimatPlant",
+      "latitude": 54.05,
+      "longitude": 128.63
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "KitimatTownsite",
+      "latitude": 54.07,
+      "longitude": 128.65
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Ladner",
+      "latitude": 49.08,
+      "longitude": 123.08
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Ladysmith",
+      "latitude": 48.99,
+      "longitude": 123.82
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Langford",
+      "latitude": 48.45,
+      "longitude": 123.5
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Langley",
+      "latitude": 49.1,
+      "longitude": 122.65
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Lillooet",
+      "latitude": 50.68,
+      "longitude": 121.93
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Lytton",
+      "latitude": 50.23,
+      "longitude": 121.57
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Mackenzie",
+      "latitude": 55.3,
+      "longitude": 123.08
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Masset",
+      "latitude": 54.02,
+      "longitude": 132.1
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "McBride",
+      "latitude": 53.3,
+      "longitude": 120.17
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "McLeodLake",
+      "latitude": 54.98,
+      "longitude": 123.03
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Merritt",
+      "latitude": 50.1,
+      "longitude": 120.7833
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "MissionCity",
+      "latitude": 49.13,
+      "longitude": 122.3
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Montrose",
+      "latitude": 49.08,
+      "longitude": 117.58
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Nakusp",
+      "latitude": 50.23,
+      "longitude": 117.8
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Nanaimo",
+      "latitude": 49.17,
+      "longitude": 123.93
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Nelson",
+      "latitude": 49.48,
+      "longitude": 117.28
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "NewWestminster",
+      "latitude": 49.22,
+      "longitude": 122.92
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "NorthVancouver",
+      "latitude": 49.32,
+      "longitude": 123.07
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "OceanFalls",
+      "latitude": 52.35,
+      "longitude": 127.7
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Osoyoos",
+      "latitude": 49.03,
+      "longitude": 119.5
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Parksville",
+      "latitude": 49.32,
+      "longitude": 124.33
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Penticton",
+      "latitude": 49.5,
+      "longitude": 119.58
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "PortAlberni",
+      "latitude": 49.2333,
+      "longitude": 124.8
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "PortAlice",
+      "latitude": 50.38,
+      "longitude": 127.45
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "PortHardy",
+      "latitude": 50.7,
+      "longitude": 127.42
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "PortMcNeill",
+      "latitude": 50.58,
+      "longitude": 127.1
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "PortRenfrew",
+      "latitude": 48.56,
+      "longitude": 124.4
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "PowellRiver",
+      "latitude": 49.83,
+      "longitude": 124.52
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "PrinceGeorge",
+      "latitude": 53.92,
+      "longitude": 122.75
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "PrinceRupert",
+      "latitude": 54.32,
+      "longitude": 130.32
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Princeton",
+      "latitude": 49.5,
+      "longitude": 120.51
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "QualicumBeach",
+      "latitude": 49.35,
+      "longitude": 124.45
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "QueenCharlotteCity",
+      "latitude": 53.26,
+      "longitude": 132.08
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Quesnel",
+      "latitude": 52.98,
+      "longitude": 122.48
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Revelstoke",
+      "latitude": 50.98,
+      "longitude": 118.2
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Richmond",
+      "latitude": 49.17,
+      "longitude": 123.1
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "SalmonArm",
+      "latitude": 50.7,
+      "longitude": 119.28
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Sandspit",
+      "latitude": 53.25,
+      "longitude": 131.82
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Sechelt",
+      "latitude": 49.47,
+      "longitude": 123.75
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Sidney",
+      "latitude": 48.65,
+      "longitude": 123.4
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "SmithRiver",
+      "latitude": 59.88,
+      "longitude": 126.43
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Smithers",
+      "latitude": 54.7833,
+      "longitude": 127.1667
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Sooke",
+      "latitude": 48.38,
+      "longitude": 123.72
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Squamish",
+      "latitude": 49.7,
+      "longitude": 123.15
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Stewart",
+      "latitude": 55.93,
+      "longitude": 129.98
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Surrey_88Ave&156St_88eAvEt156eRue",
+      "latitude": 49.1628,
+      "longitude": 122.7902
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Tahsis",
+      "latitude": 49.93,
+      "longitude": 126.65
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Taylor",
+      "latitude": 56.2,
+      "longitude": 120.69
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Terrace",
+      "latitude": 54.52,
+      "longitude": 128.6
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Tofino",
+      "latitude": 49.12,
+      "longitude": 125.88
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Trail",
+      "latitude": 49.1,
+      "longitude": 117.7
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Ucluelet",
+      "latitude": 48.93,
+      "longitude": 125.55
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Vancouver_Granville&41Ave_rueGranvilleet41eav",
+      "latitude": 49.2343,
+      "longitude": 123.1396
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Vancouver_cityhall_Hoteldeville",
+      "latitude": 49.25,
+      "longitude": 123.12
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Vernon",
+      "latitude": 50.3,
+      "longitude": 119.27
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Victoria",
+      "latitude": 48.43,
+      "longitude": 123.37
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "VictoriaGonsalesHts",
+      "latitude": 48.42,
+      "longitude": 123.32
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "VictoriaMtTolmie",
+      "latitude": 48.47,
+      "longitude": 123.33
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "WestVancouver",
+      "latitude": 49.33,
+      "longitude": 123.17
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Whistler",
+      "latitude": 50.12,
+      "longitude": 122.96
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "WhiteRock",
+      "latitude": 49.02,
+      "longitude": 122.8
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "WilliamsLake",
+      "latitude": 52.1333,
+      "longitude": 122.15
+    },
+    {
+      "province_code": "BC",
+      "province_name": "British Columbia",
+      "city_name": "Youbou",
+      "latitude": 48.88,
+      "longitude": 124.2
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "Beausejour",
+      "latitude": 50.0667,
+      "longitude": 96.5167
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "Boissevain",
+      "latitude": 49.2333,
+      "longitude": 100.05
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "Brandon",
+      "latitude": 49.8333,
+      "longitude": 99.95
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "Churchill",
+      "latitude": 58.75,
+      "longitude": 94.12
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "Dauphin",
+      "latitude": 51.15,
+      "longitude": 100.05
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "FlinFlon",
+      "latitude": 54.77,
+      "longitude": 101.88
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "Gimli",
+      "latitude": 50.64,
+      "longitude": 96.99
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "IslandLake",
+      "latitude": 53.8667,
+      "longitude": 94.6667
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "LacduBonnet",
+      "latitude": 50.27,
+      "longitude": 96.06
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "LynnLake",
+      "latitude": 56.85,
+      "longitude": 101.05
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "Morden",
+      "latitude": 49.1833,
+      "longitude": 98.1
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "Neepawa",
+      "latitude": 50.2333,
+      "longitude": 99.4667
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "PineFalls",
+      "latitude": 50.5667,
+      "longitude": 96.2167
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "PortagelaPrairie",
+      "latitude": 50.0,
+      "longitude": 98.29
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "Rivers",
+      "latitude": 50.0333,
+      "longitude": 100.2333
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "Sandilands",
+      "latitude": 49.36,
+      "longitude": 96.3
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "Selkirk",
+      "latitude": 50.15,
+      "longitude": 96.8667
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "SplitLake",
+      "latitude": 56.25,
+      "longitude": 96.1
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "Steinbach",
+      "latitude": 49.5333,
+      "longitude": 96.6833
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "SwanRiver",
+      "latitude": 52.14,
+      "longitude": 101.27
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "ThePas",
+      "latitude": 53.87,
+      "longitude": 101.25
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "Thompson",
+      "latitude": 55.79,
+      "longitude": 97.86
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "Virden",
+      "latitude": 49.86,
+      "longitude": 100.93
+    },
+    {
+      "province_code": "MB",
+      "province_name": "Manitoba",
+      "city_name": "Winnipeg",
+      "latitude": 49.89,
+      "longitude": 97.15
+    },
+    {
+      "province_code": "NB",
+      "province_name": "New Brunswick",
+      "city_name": "Alma",
+      "latitude": 45.6,
+      "longitude": 64.95
+    },
+    {
+      "province_code": "NB",
+      "province_name": "New Brunswick",
+      "city_name": "Bathurst",
+      "latitude": 47.6,
+      "longitude": 65.65
+    },
+    {
+      "province_code": "NB",
+      "province_name": "New Brunswick",
+      "city_name": "Campbellton",
+      "latitude": 48.0,
+      "longitude": 66.67
+    },
+    {
+      "province_code": "NB",
+      "province_name": "New Brunswick",
+      "city_name": "Edmundston",
+      "latitude": 47.37,
+      "longitude": 68.33
+    },
+    {
+      "province_code": "NB",
+      "province_name": "New Brunswick",
+      "city_name": "Fredericton",
+      "latitude": 45.95,
+      "longitude": 66.65
+    },
+    {
+      "province_code": "NB",
+      "province_name": "New Brunswick",
+      "city_name": "Gagetown",
+      "latitude": 45.79,
+      "longitude": 66.16
+    },
+    {
+      "province_code": "NB",
+      "province_name": "New Brunswick",
+      "city_name": "GrandFalls",
+      "latitude": 47.05,
+      "longitude": 67.73
+    },
+    {
+      "province_code": "NB",
+      "province_name": "New Brunswick",
+      "city_name": "Miramichi",
+      "latitude": 47.03,
+      "longitude": 65.47
+    },
+    {
+      "province_code": "NB",
+      "province_name": "New Brunswick",
+      "city_name": "Moncton",
+      "latitude": 46.1,
+      "longitude": 64.78
+    },
+    {
+      "province_code": "NB",
+      "province_name": "New Brunswick",
+      "city_name": "Oromocto",
+      "latitude": 45.84,
+      "longitude": 66.48
+    },
+    {
+      "province_code": "NB",
+      "province_name": "New Brunswick",
+      "city_name": "Sackville",
+      "latitude": 45.88,
+      "longitude": 64.37
+    },
+    {
+      "province_code": "NB",
+      "province_name": "New Brunswick",
+      "city_name": "SaintAndrews",
+      "latitude": 45.07,
+      "longitude": 67.05
+    },
+    {
+      "province_code": "NB",
+      "province_name": "New Brunswick",
+      "city_name": "SaintGeorge",
+      "latitude": 45.13,
+      "longitude": 66.82
+    },
+    {
+      "province_code": "NB",
+      "province_name": "New Brunswick",
+      "city_name": "SaintJohn",
+      "latitude": 45.2667,
+      "longitude": 66.05
+    },
+    {
+      "province_code": "NB",
+      "province_name": "New Brunswick",
+      "city_name": "Shippagan",
+      "latitude": 47.73,
+      "longitude": 64.7
+    },
+    {
+      "province_code": "NB",
+      "province_name": "New Brunswick",
+      "city_name": "StStephen",
+      "latitude": 45.2,
+      "longitude": 67.28
+    },
+    {
+      "province_code": "NB",
+      "province_name": "New Brunswick",
+      "city_name": "Woodstock",
+      "latitude": 46.16,
+      "longitude": 67.6
+    },
+    {
+      "province_code": "NL",
+      "province_name": "Newfoundland and Labrador",
+      "city_name": "Argentia",
+      "latitude": 47.3,
+      "longitude": 53.98
+    },
+    {
+      "province_code": "NL",
+      "province_name": "Newfoundland and Labrador",
+      "city_name": "Bonavista",
+      "latitude": 48.65,
+      "longitude": 53.12
+    },
+    {
+      "province_code": "NL",
+      "province_name": "Newfoundland and Labrador",
+      "city_name": "Buchans",
+      "latitude": 48.8167,
+      "longitude": 56.8667
+    },
+    {
+      "province_code": "NL",
+      "province_name": "Newfoundland and Labrador",
+      "city_name": "CapeHarrison",
+      "latitude": 54.78,
+      "longitude": 57.95
+    },
+    {
+      "province_code": "NL",
+      "province_name": "Newfoundland and Labrador",
+      "city_name": "CapeRace",
+      "latitude": 46.65,
+      "longitude": 53.07
+    },
+    {
+      "province_code": "NL",
+      "province_name": "Newfoundland and Labrador",
+      "city_name": "Channel-PortauxBasques",
+      "latitude": 47.57,
+      "longitude": 59.15
+    },
+    {
+      "province_code": "NL",
+      "province_name": "Newfoundland and Labrador",
+      "city_name": "CornerBrook",
+      "latitude": 48.95,
+      "longitude": 57.95
+    },
+    {
+      "province_code": "NL",
+      "province_name": "Newfoundland and Labrador",
+      "city_name": "Gander",
+      "latitude": 48.98,
+      "longitude": 54.59
+    },
+    {
+      "province_code": "NL",
+      "province_name": "Newfoundland and Labrador",
+      "city_name": "GrandBank",
+      "latitude": 47.1,
+      "longitude": 55.77
+    },
+    {
+      "province_code": "NL",
+      "province_name": "Newfoundland and Labrador",
+      "city_name": "GrandFalls",
+      "latitude": 48.93,
+      "longitude": 55.67
+    },
+    {
+      "province_code": "NL",
+      "province_name": "Newfoundland and Labrador",
+      "city_name": "HappyValley-GooseBay",
+      "latitude": 53.32,
+      "longitude": 60.37
+    },
+    {
+      "province_code": "NL",
+      "province_name": "Newfoundland and Labrador",
+      "city_name": "LabradorCity",
+      "latitude": 52.95,
+      "longitude": 66.92
+    },
+    {
+      "province_code": "NL",
+      "province_name": "Newfoundland and Labrador",
+      "city_name": "StAnthony",
+      "latitude": 51.37,
+      "longitude": 55.58
+    },
+    {
+      "province_code": "NL",
+      "province_name": "Newfoundland and Labrador",
+      "city_name": "StJohns",
+      "latitude": 47.57,
+      "longitude": 52.72
+    },
+    {
+      "province_code": "NL",
+      "province_name": "Newfoundland and Labrador",
+      "city_name": "Stephenville",
+      "latitude": 48.55,
+      "longitude": 58.58
+    },
+    {
+      "province_code": "NL",
+      "province_name": "Newfoundland and Labrador",
+      "city_name": "TwinFalls",
+      "latitude": 53.5,
+      "longitude": 64.53
+    },
+    {
+      "province_code": "NL",
+      "province_name": "Newfoundland and Labrador",
+      "city_name": "Wabana",
+      "latitude": 47.63,
+      "longitude": 52.95
+    },
+    {
+      "province_code": "NL",
+      "province_name": "Newfoundland and Labrador",
+      "city_name": "Wabush",
+      "latitude": 52.92,
+      "longitude": 66.87
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "Amherst",
+      "latitude": 45.83,
+      "longitude": 64.2
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "Antigonish",
+      "latitude": 45.62,
+      "longitude": 62.0
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "Bridgewater",
+      "latitude": 44.38,
+      "longitude": 64.52
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "Canso",
+      "latitude": 45.33,
+      "longitude": 61.0
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "Dartmouth",
+      "latitude": 44.67,
+      "longitude": 63.57
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "Debert",
+      "latitude": 45.43,
+      "longitude": 63.47
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "Digby",
+      "latitude": 44.62,
+      "longitude": 65.77
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "GreenwoodCFB",
+      "latitude": 44.98,
+      "longitude": 64.9
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "Halifax",
+      "latitude": 44.65,
+      "longitude": 63.6
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "Kentville",
+      "latitude": 45.08,
+      "longitude": 64.5
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "Liverpool",
+      "latitude": 44.03,
+      "longitude": 64.72
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "Lockeport",
+      "latitude": 43.7,
+      "longitude": 65.12
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "Louisburg",
+      "latitude": 45.92,
+      "longitude": 59.98
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "Lunenburg",
+      "latitude": 44.38,
+      "longitude": 64.32
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "NewGlasgow",
+      "latitude": 45.58,
+      "longitude": 62.65
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "NorthSydney",
+      "latitude": 46.22,
+      "longitude": 60.25
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "Pictou",
+      "latitude": 45.68,
+      "longitude": 62.72
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "PortHawkesbury",
+      "latitude": 45.62,
+      "longitude": 61.35
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "Springhill",
+      "latitude": 45.65,
+      "longitude": 64.05
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "Stewiacke",
+      "latitude": 45.13,
+      "longitude": 63.35
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "Sydney",
+      "latitude": 46.15,
+      "longitude": 60.18
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "Tatamagouche",
+      "latitude": 45.72,
+      "longitude": 63.3
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "Truro",
+      "latitude": 45.37,
+      "longitude": 63.27
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "Wolfville",
+      "latitude": 45.08,
+      "longitude": 64.37
+    },
+    {
+      "province_code": "NS",
+      "province_name": "Nova Scotia",
+      "city_name": "Yarmouth",
+      "latitude": 43.83,
+      "longitude": 66.12
+    },
+    {
+      "province_code": "NT",
+      "province_name": "Northwest Territories",
+      "city_name": "Aklavik",
+      "latitude": 68.23,
+      "longitude": 135.01
+    },
+    {
+      "province_code": "NT",
+      "province_name": "Northwest Territories",
+      "city_name": "EchoBay_PortRadium",
+      "latitude": 66.05,
+      "longitude": 117.88
+    },
+    {
+      "province_code": "NT",
+      "province_name": "Northwest Territories",
+      "city_name": "FortGoodHope",
+      "latitude": 66.29,
+      "longitude": 128.63
+    },
+    {
+      "province_code": "NT",
+      "province_name": "Northwest Territories",
+      "city_name": "FortMcPherson",
+      "latitude": 67.43,
+      "longitude": 134.88
+    },
+    {
+      "province_code": "NT",
+      "province_name": "Northwest Territories",
+      "city_name": "FortProvidence",
+      "latitude": 61.35,
+      "longitude": 117.65
+    },
+    {
+      "province_code": "NT",
+      "province_name": "Northwest Territories",
+      "city_name": "FortResolution",
+      "latitude": 61.19,
+      "longitude": 113.67
+    },
+    {
+      "province_code": "NT",
+      "province_name": "Northwest Territories",
+      "city_name": "FortSimpson",
+      "latitude": 61.93,
+      "longitude": 121.35
+    },
+    {
+      "province_code": "NT",
+      "province_name": "Northwest Territories",
+      "city_name": "FortSmith",
+      "latitude": 60.0,
+      "longitude": 111.88
+    },
+    {
+      "province_code": "NT",
+      "province_name": "Northwest Territories",
+      "city_name": "HayRiver",
+      "latitude": 60.85,
+      "longitude": 115.7333
+    },
+    {
+      "province_code": "NT",
+      "province_name": "Northwest Territories",
+      "city_name": "Inuvik",
+      "latitude": 68.35,
+      "longitude": 133.72
+    },
+    {
+      "province_code": "NT",
+      "province_name": "Northwest Territories",
+      "city_name": "MouldBay",
+      "latitude": 76.23,
+      "longitude": 119.33
+    },
+    {
+      "province_code": "NT",
+      "province_name": "Northwest Territories",
+      "city_name": "NormanWells",
+      "latitude": 65.2833,
+      "longitude": 126.85
+    },
+    {
+      "province_code": "NT",
+      "province_name": "Northwest Territories",
+      "city_name": "Rae-Edzo",
+      "latitude": 62.83,
+      "longitude": 116.05
+    },
+    {
+      "province_code": "NT",
+      "province_name": "Northwest Territories",
+      "city_name": "Tungsten",
+      "latitude": 61.95,
+      "longitude": 128.27
+    },
+    {
+      "province_code": "NT",
+      "province_name": "Northwest Territories",
+      "city_name": "Ulukhaqtuuq_Holman",
+      "latitude": 70.73,
+      "longitude": 117.75
+    },
+    {
+      "province_code": "NT",
+      "province_name": "Northwest Territories",
+      "city_name": "Wrigley",
+      "latitude": 63.23,
+      "longitude": 123.47
+    },
+    {
+      "province_code": "NT",
+      "province_name": "Northwest Territories",
+      "city_name": "Yellowknife",
+      "latitude": 62.48,
+      "longitude": 114.35
+    },
+    {
+      "province_code": "NU",
+      "province_name": "Nunavut",
+      "city_name": "Alert",
+      "latitude": 82.48,
+      "longitude": 62.25
+    },
+    {
+      "province_code": "NU",
+      "province_name": "Nunavut",
+      "city_name": "ArcticBay",
+      "latitude": 73.03,
+      "longitude": 85.17
+    },
+    {
+      "province_code": "NU",
+      "province_name": "Nunavut",
+      "city_name": "Arviat",
+      "latitude": 61.12,
+      "longitude": 94.05
+    },
+    {
+      "province_code": "NU",
+      "province_name": "Nunavut",
+      "city_name": "BakerLake",
+      "latitude": 64.32,
+      "longitude": 96.02
+    },
+    {
+      "province_code": "NU",
+      "province_name": "Nunavut",
+      "city_name": "Eureka",
+      "latitude": 79.9833,
+      "longitude": 85.95
+    },
+    {
+      "province_code": "NU",
+      "province_name": "Nunavut",
+      "city_name": "Igluligaarjuk_ChesterfieldInlet",
+      "latitude": 63.33,
+      "longitude": 90.7
+    },
+    {
+      "province_code": "NU",
+      "province_name": "Nunavut",
+      "city_name": "Iqaluit",
+      "latitude": 63.73,
+      "longitude": 68.5
+    },
+    {
+      "province_code": "NU",
+      "province_name": "Nunavut",
+      "city_name": "Iqaluktuuttiaq_CambridgeBay",
+      "latitude": 69.12,
+      "longitude": 105.03
+    },
+    {
+      "province_code": "NU",
+      "province_name": "Nunavut",
+      "city_name": "Isachsen",
+      "latitude": 78.78,
+      "longitude": 103.53
+    },
+    {
+      "province_code": "NU",
+      "province_name": "Nunavut",
+      "city_name": "Kangiqiniq_RankinInlet",
+      "latitude": 62.82,
+      "longitude": 92.08
+    },
+    {
+      "province_code": "NU",
+      "province_name": "Nunavut",
+      "city_name": "Kanngiqtugaapik_ClydeRiver",
+      "latitude": 70.45,
+      "longitude": 68.57
+    },
+    {
+      "province_code": "NU",
+      "province_name": "Nunavut",
+      "city_name": "Kugluktuk",
+      "latitude": 67.83,
+      "longitude": 115.08
+    },
+    {
+      "province_code": "NU",
+      "province_name": "Nunavut",
+      "city_name": "NottinghamIsland",
+      "latitude": 63.1,
+      "longitude": 78.0
+    },
+    {
+      "province_code": "NU",
+      "province_name": "Nunavut",
+      "city_name": "Resolute",
+      "latitude": 74.68,
+      "longitude": 94.9
+    },
+    {
+      "province_code": "NU",
+      "province_name": "Nunavut",
+      "city_name": "ResolutionIsland",
+      "latitude": 61.3,
+      "longitude": 64.8833
+    },
+    {
+      "province_code": "NU",
+      "province_name": "Nunavut",
+      "city_name": "Salliq_CoralHarbour",
+      "latitude": 64.13,
+      "longitude": 83.17
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "AilsaCraig",
+      "latitude": 43.13,
+      "longitude": 81.55
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Ajax",
+      "latitude": 43.85,
+      "longitude": 79.03
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Alexandria",
+      "latitude": 45.32,
+      "longitude": 74.63
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Alliston",
+      "latitude": 44.15,
+      "longitude": 79.87
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Almonte",
+      "latitude": 45.23,
+      "longitude": 76.2
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Armstrong",
+      "latitude": 50.3,
+      "longitude": 89.03
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Arnprior",
+      "latitude": 45.43,
+      "longitude": 76.35
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Atikokan",
+      "latitude": 48.75,
+      "longitude": 91.62
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Attawapiskat",
+      "latitude": 52.93,
+      "longitude": 82.43
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Aurora",
+      "latitude": 44.0,
+      "longitude": 79.47
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Bancroft",
+      "latitude": 45.05,
+      "longitude": 77.85
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Barrie",
+      "latitude": 44.4,
+      "longitude": 79.67
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Barriefield",
+      "latitude": 44.23,
+      "longitude": 76.47
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Beaverton",
+      "latitude": 44.43,
+      "longitude": 79.15
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Belleville",
+      "latitude": 44.1667,
+      "longitude": 77.3833
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Belmont",
+      "latitude": 42.88,
+      "longitude": 81.08
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Bowmanville",
+      "latitude": 43.91,
+      "longitude": 78.68
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Bracebridge",
+      "latitude": 45.03,
+      "longitude": 79.3
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Bradford",
+      "latitude": 44.12,
+      "longitude": 79.57
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Brampton",
+      "latitude": 43.68,
+      "longitude": 79.77
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Brantford",
+      "latitude": 43.13,
+      "longitude": 80.27
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Brighton",
+      "latitude": 44.03,
+      "longitude": 77.73
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Brockville",
+      "latitude": 44.59,
+      "longitude": 75.68
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "BurksFalls",
+      "latitude": 45.62,
+      "longitude": 79.4
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Burlington",
+      "latitude": 43.32,
+      "longitude": 79.8
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "CFBBorden_BFCBorden",
+      "latitude": 44.27,
+      "longitude": 79.88
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Cambridge",
+      "latitude": 43.38,
+      "longitude": 80.32
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Campbellford",
+      "latitude": 44.3,
+      "longitude": 77.8
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Cannington",
+      "latitude": 44.35,
+      "longitude": 79.03
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "CarletonPlace",
+      "latitude": 45.13,
+      "longitude": 76.15
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Cavan",
+      "latitude": 44.2,
+      "longitude": 78.47
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Centralia",
+      "latitude": 43.28,
+      "longitude": 81.47
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Chapleau",
+      "latitude": 47.83,
+      "longitude": 83.4
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Chatham",
+      "latitude": 42.4,
+      "longitude": 82.18
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Chesley",
+      "latitude": 44.28,
+      "longitude": 81.08
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Clinton",
+      "latitude": 43.62,
+      "longitude": 81.53
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Coboconk",
+      "latitude": 44.65,
+      "longitude": 78.8
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Cobourg",
+      "latitude": 43.97,
+      "longitude": 78.17
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Cochrane",
+      "latitude": 49.07,
+      "longitude": 81.02
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Colborne",
+      "latitude": 44.0,
+      "longitude": 77.88
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Collingwood",
+      "latitude": 44.48,
+      "longitude": 80.22
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Cornwall",
+      "latitude": 45.03,
+      "longitude": 74.73
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Corunna",
+      "latitude": 42.88,
+      "longitude": 82.43
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "DeepRiver",
+      "latitude": 46.1,
+      "longitude": 77.5
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Deseronto",
+      "latitude": 44.2,
+      "longitude": 77.05
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Dorchester",
+      "latitude": 42.98,
+      "longitude": 81.07
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Dorion",
+      "latitude": 48.78,
+      "longitude": 88.53
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Dresden",
+      "latitude": 42.58,
+      "longitude": 82.18
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Dryden",
+      "latitude": 49.78,
+      "longitude": 92.75
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Dundalk",
+      "latitude": 44.1703,
+      "longitude": 80.3936
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Dunnville",
+      "latitude": 42.9,
+      "longitude": 79.62
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Durham",
+      "latitude": 44.17,
+      "longitude": 80.82
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Dutton",
+      "latitude": 42.67,
+      "longitude": 81.5
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Earlton",
+      "latitude": 47.72,
+      "longitude": 79.82
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Edison",
+      "latitude": 49.8,
+      "longitude": 93.55
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "ElliotLake",
+      "latitude": 46.3811,
+      "longitude": 82.6572
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Elmvale",
+      "latitude": 44.58,
+      "longitude": 79.87
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Embro",
+      "latitude": 43.15,
+      "longitude": 80.9
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Englehart",
+      "latitude": 47.82,
+      "longitude": 79.87
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Espanola",
+      "latitude": 46.25,
+      "longitude": 81.77
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Etobicoke",
+      "latitude": 43.7,
+      "longitude": 79.57
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Exeter",
+      "latitude": 43.35,
+      "longitude": 81.48
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "FenelonFalls",
+      "latitude": 44.53,
+      "longitude": 78.75
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Fergus",
+      "latitude": 43.7,
+      "longitude": 80.37
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Forest",
+      "latitude": 43.1,
+      "longitude": 82.0
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "FortErie",
+      "latitude": 42.9,
+      "longitude": 78.93
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "FortErieRidgeway",
+      "latitude": 42.88,
+      "longitude": 79.05
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "FortFrances",
+      "latitude": 48.61,
+      "longitude": 93.39
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Gananoque",
+      "latitude": 44.33,
+      "longitude": 76.17
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Geraldton",
+      "latitude": 49.73,
+      "longitude": 86.95
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Glencoe",
+      "latitude": 42.75,
+      "longitude": 81.72
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Goderich",
+      "latitude": 43.75,
+      "longitude": 81.72
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "GoreBay",
+      "latitude": 45.92,
+      "longitude": 82.47
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Graham",
+      "latitude": 49.25,
+      "longitude": 90.57
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "GravenhurstMuskokaAirport_AéroportdeMuskoka",
+      "latitude": 44.92,
+      "longitude": 79.37
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Grimsby",
+      "latitude": 43.2,
+      "longitude": 79.57
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Guelph",
+      "latitude": 43.55,
+      "longitude": 80.25
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Guthrie",
+      "latitude": 44.47,
+      "longitude": 79.55
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Haileybury",
+      "latitude": 47.45,
+      "longitude": 79.63
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "HaldimandCaledonia",
+      "latitude": 43.07,
+      "longitude": 79.93
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "HaldimandHagersville",
+      "latitude": 42.97,
+      "longitude": 80.05
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Haliburton",
+      "latitude": 45.05,
+      "longitude": 78.52
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "HaltonHillsGeorgetown",
+      "latitude": 43.65,
+      "longitude": 79.92
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Hamilton",
+      "latitude": 43.25,
+      "longitude": 79.86
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Hanover",
+      "latitude": 44.15,
+      "longitude": 81.03
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Hastings",
+      "latitude": 44.3,
+      "longitude": 77.95
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Hawkesbury",
+      "latitude": 45.6,
+      "longitude": 74.62
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Hearst",
+      "latitude": 49.68,
+      "longitude": 83.67
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "HoneyHarbour",
+      "latitude": 44.87,
+      "longitude": 79.82
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Hornepayne",
+      "latitude": 49.22,
+      "longitude": 84.78
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Huntsville",
+      "latitude": 45.33,
+      "longitude": 79.22
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Ingersoll",
+      "latitude": 43.03,
+      "longitude": 80.88
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "IroquoisFalls",
+      "latitude": 48.77,
+      "longitude": 80.68
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Jellicoe",
+      "latitude": 49.68,
+      "longitude": 87.52
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Kapuskasing",
+      "latitude": 49.42,
+      "longitude": 82.43
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Kemptville",
+      "latitude": 45.02,
+      "longitude": 75.64
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Kenora",
+      "latitude": 49.82,
+      "longitude": 94.43
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Killaloe",
+      "latitude": 45.55,
+      "longitude": 77.42
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Kincardine",
+      "latitude": 44.18,
+      "longitude": 81.63
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Kingston",
+      "latitude": 44.23,
+      "longitude": 76.48
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Kinmount",
+      "latitude": 44.78,
+      "longitude": 78.65
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "KirklandLake",
+      "latitude": 48.15,
+      "longitude": 80.03
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Kitchener",
+      "latitude": 43.45,
+      "longitude": 80.48
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Kitchenuhmaykoosib",
+      "latitude": 53.83,
+      "longitude": 90.0
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Lakefield",
+      "latitude": 44.43,
+      "longitude": 78.27
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "LansdowneHouse",
+      "latitude": 52.23,
+      "longitude": 87.88
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Leamington",
+      "latitude": 42.08,
+      "longitude": 82.57
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Lindsay",
+      "latitude": 44.35,
+      "longitude": 78.73
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "LionsHead",
+      "latitude": 44.98,
+      "longitude": 81.25
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Listowel",
+      "latitude": 43.73,
+      "longitude": 80.95
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "London",
+      "latitude": 42.98,
+      "longitude": 81.23
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Lucan",
+      "latitude": 43.18,
+      "longitude": 81.4
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Maitland",
+      "latitude": 44.63,
+      "longitude": 75.62
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Markdale",
+      "latitude": 44.32,
+      "longitude": 80.65
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Markham",
+      "latitude": 43.87,
+      "longitude": 79.27
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Martin",
+      "latitude": 49.25,
+      "longitude": 91.13
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Matheson",
+      "latitude": 48.53,
+      "longitude": 80.47
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Mattawa",
+      "latitude": 46.32,
+      "longitude": 78.7
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Midland",
+      "latitude": 44.75,
+      "longitude": 79.88
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Milton",
+      "latitude": 43.52,
+      "longitude": 79.88
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Milverton",
+      "latitude": 43.57,
+      "longitude": 80.92
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Minden",
+      "latitude": 44.92,
+      "longitude": 78.73
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Mississauga",
+      "latitude": 43.58,
+      "longitude": 79.65
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "MississaugaPortCredit",
+      "latitude": 43.55,
+      "longitude": 79.58
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Mitchell",
+      "latitude": 43.47,
+      "longitude": 81.2
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Moosonee",
+      "latitude": 51.32,
+      "longitude": 80.72
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Morrisburg",
+      "latitude": 44.9,
+      "longitude": 75.18
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "MountForest",
+      "latitude": 43.98,
+      "longitude": 80.73
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Nakina",
+      "latitude": 50.17,
+      "longitude": 86.7
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "NanticokeJarvis",
+      "latitude": 42.88,
+      "longitude": 80.1
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "NanticokePortDover",
+      "latitude": 42.78,
+      "longitude": 80.2
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Napanee",
+      "latitude": 44.25,
+      "longitude": 76.95
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "NewLiskeard",
+      "latitude": 47.5,
+      "longitude": 79.67
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Newcastle",
+      "latitude": 43.92,
+      "longitude": 78.58
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Newmarket",
+      "latitude": 44.05,
+      "longitude": 79.47
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "NiagaraFalls",
+      "latitude": 43.1,
+      "longitude": 79.07
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "NorthBay",
+      "latitude": 46.32,
+      "longitude": 79.47
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "NorthYork",
+      "latitude": 43.77,
+      "longitude": 79.42
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Norwood",
+      "latitude": 44.38,
+      "longitude": 77.98
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Oakville",
+      "latitude": 43.45,
+      "longitude": 79.68
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Orangeville",
+      "latitude": 43.92,
+      "longitude": 80.1
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Orillia",
+      "latitude": 44.62,
+      "longitude": 79.42
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Oshawa",
+      "latitude": 43.9,
+      "longitude": 78.85
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "OttawaBarrhaven",
+      "latitude": 45.28,
+      "longitude": 75.76
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "OttawaKanata",
+      "latitude": 45.31,
+      "longitude": 75.91
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "OttawaOrleans",
+      "latitude": 45.48,
+      "longitude": 75.52
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Ottawa_M-CIntlAirport_AéroportintM-C",
+      "latitude": 45.32,
+      "longitude": 75.67
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Ottawa_cityhall_Hôteldeville",
+      "latitude": 45.42,
+      "longitude": 75.69
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "OwenSound",
+      "latitude": 44.57,
+      "longitude": 80.93
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "PagwaRiver",
+      "latitude": 50.02,
+      "longitude": 85.22
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Paris",
+      "latitude": 43.2,
+      "longitude": 80.38
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Parkhill",
+      "latitude": 43.15,
+      "longitude": 81.68
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "ParrySound",
+      "latitude": 45.35,
+      "longitude": 80.03
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "PelhamFonthill",
+      "latitude": 43.03,
+      "longitude": 79.28
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Pembroke",
+      "latitude": 45.82,
+      "longitude": 77.12
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Penetanguishene",
+      "latitude": 44.78,
+      "longitude": 79.92
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Perth",
+      "latitude": 44.9,
+      "longitude": 76.25
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Petawawa",
+      "latitude": 45.9,
+      "longitude": 77.33
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Peterborough",
+      "latitude": 44.3,
+      "longitude": 78.32
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Petrolia",
+      "latitude": 42.87,
+      "longitude": 82.15
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "PickeringDunbarton",
+      "latitude": 43.82,
+      "longitude": 79.1
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Picton",
+      "latitude": 44.0,
+      "longitude": 77.13
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Plattsville",
+      "latitude": 43.3,
+      "longitude": 80.62
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "PointAlexander",
+      "latitude": 46.13,
+      "longitude": 77.57
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "PortBurwell",
+      "latitude": 42.65,
+      "longitude": 80.82
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "PortColborne",
+      "latitude": 42.9,
+      "longitude": 79.23
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "PortElgin",
+      "latitude": 44.43,
+      "longitude": 81.4
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "PortHope",
+      "latitude": 43.95,
+      "longitude": 78.3
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "PortPerry",
+      "latitude": 44.1,
+      "longitude": 78.95
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "PortStanley",
+      "latitude": 42.67,
+      "longitude": 81.22
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Prescott",
+      "latitude": 44.72,
+      "longitude": 75.52
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Princeton",
+      "latitude": 43.17,
+      "longitude": 80.53
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Raith",
+      "latitude": 48.83,
+      "longitude": 89.93
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Rayside-BalfourChelmsford",
+      "latitude": 46.58,
+      "longitude": 81.2
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "RedLake",
+      "latitude": 51.05,
+      "longitude": 93.82
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Renfrew",
+      "latitude": 45.47,
+      "longitude": 76.68
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "RichmondHill",
+      "latitude": 43.87,
+      "longitude": 79.45
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Rockland",
+      "latitude": 45.55,
+      "longitude": 75.29
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Sarnia",
+      "latitude": 42.97,
+      "longitude": 82.38
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "SaultSteMarie",
+      "latitude": 46.52,
+      "longitude": 84.33
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Scarborough",
+      "latitude": 43.78,
+      "longitude": 79.25
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Schreiber",
+      "latitude": 48.8,
+      "longitude": 87.25
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Seaforth",
+      "latitude": 43.55,
+      "longitude": 81.4
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Shelburne",
+      "latitude": 44.0764,
+      "longitude": 80.2044
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Simcoe",
+      "latitude": 42.83,
+      "longitude": 80.3
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "SiouxLookout",
+      "latitude": 50.07,
+      "longitude": 91.98
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "SmithsFalls",
+      "latitude": 44.9,
+      "longitude": 76.02
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Smithville",
+      "latitude": 43.1,
+      "longitude": 79.55
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "SmoothRockFalls",
+      "latitude": 49.28,
+      "longitude": 81.63
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "SouthRiver",
+      "latitude": 45.83,
+      "longitude": 79.38
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Southampton",
+      "latitude": 44.48,
+      "longitude": 81.38
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "StCatharines",
+      "latitude": 43.17,
+      "longitude": 79.25
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "StMarys",
+      "latitude": 43.25,
+      "longitude": 81.13
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "StThomas",
+      "latitude": 42.78,
+      "longitude": 81.2
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Stirling",
+      "latitude": 44.3,
+      "longitude": 77.55
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Stratford",
+      "latitude": 43.37,
+      "longitude": 80.95
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Strathroy",
+      "latitude": 42.95,
+      "longitude": 81.63
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "SturgeonFalls",
+      "latitude": 46.37,
+      "longitude": 79.92
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Sudbury",
+      "latitude": 46.5,
+      "longitude": 81.0
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Sundridge",
+      "latitude": 45.77,
+      "longitude": 79.4
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Tavistock",
+      "latitude": 43.32,
+      "longitude": 80.83
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Temagami",
+      "latitude": 47.07,
+      "longitude": 79.78
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Thamesford",
+      "latitude": 43.07,
+      "longitude": 81.0
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Thedford",
+      "latitude": 43.15,
+      "longitude": 81.85
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "ThunderBay",
+      "latitude": 48.4,
+      "longitude": 89.32
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Tillsonburg",
+      "latitude": 42.85,
+      "longitude": 80.73
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Timmins",
+      "latitude": 48.47,
+      "longitude": 81.33
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "TimminsPorcupine",
+      "latitude": 48.5,
+      "longitude": 81.17
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Toronto_LBPIntlAirport_AéroportintdeLesterBPearson",
+      "latitude": 43.68,
+      "longitude": 79.61
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Toronto_cityhall_Hôteldeville",
+      "latitude": 43.65,
+      "longitude": 79.38
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Trenton",
+      "latitude": 44.1,
+      "longitude": 77.58
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "TroutCreek",
+      "latitude": 45.98,
+      "longitude": 79.37
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Uxbridge",
+      "latitude": 44.1,
+      "longitude": 79.12
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "VaughanWoodbridge",
+      "latitude": 43.78,
+      "longitude": 79.6
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Vittoria",
+      "latitude": 42.77,
+      "longitude": 80.32
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Walkerton",
+      "latitude": 44.12,
+      "longitude": 81.15
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Wallaceburg",
+      "latitude": 42.6,
+      "longitude": 82.38
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Waterloo",
+      "latitude": 43.47,
+      "longitude": 80.52
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Watford",
+      "latitude": 42.95,
+      "longitude": 81.88
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Wawa",
+      "latitude": 47.98,
+      "longitude": 84.78
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Welland",
+      "latitude": 42.98,
+      "longitude": 79.25
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "WestLorne",
+      "latitude": 42.6,
+      "longitude": 81.6
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Whitby",
+      "latitude": 43.87,
+      "longitude": 78.93
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "WhitbyBrooklin",
+      "latitude": 43.95,
+      "longitude": 78.95
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "WhiteRiver",
+      "latitude": 48.6,
+      "longitude": 85.28
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Wiarton",
+      "latitude": 44.75,
+      "longitude": 81.15
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Windsor",
+      "latitude": 42.3,
+      "longitude": 83.02
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Wingham",
+      "latitude": 43.88,
+      "longitude": 81.32
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Woodstock",
+      "latitude": 43.13,
+      "longitude": 80.75
+    },
+    {
+      "province_code": "ON",
+      "province_name": "Ontario",
+      "city_name": "Wyoming",
+      "latitude": 42.95,
+      "longitude": 82.12
+    },
+    {
+      "province_code": "PE",
+      "province_name": "Prince Edward Island",
+      "city_name": "Charlottetown",
+      "latitude": 46.2333,
+      "longitude": 63.1333
+    },
+    {
+      "province_code": "PE",
+      "province_name": "Prince Edward Island",
+      "city_name": "Souris",
+      "latitude": 46.35,
+      "longitude": 62.25
+    },
+    {
+      "province_code": "PE",
+      "province_name": "Prince Edward Island",
+      "city_name": "Summerside",
+      "latitude": 46.4,
+      "longitude": 63.7833
+    },
+    {
+      "province_code": "PE",
+      "province_name": "Prince Edward Island",
+      "city_name": "Tignish",
+      "latitude": 46.95,
+      "longitude": 64.03
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Acton-Vale",
+      "latitude": 45.65,
+      "longitude": 72.57
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Alma",
+      "latitude": 48.55,
+      "longitude": 71.65
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Amos",
+      "latitude": 48.57,
+      "longitude": 78.12
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Ancienne-Lorette",
+      "latitude": 46.78,
+      "longitude": 71.38
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Asbestos",
+      "latitude": 45.77,
+      "longitude": 71.93
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Aylmer",
+      "latitude": 45.4,
+      "longitude": 75.83
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Baie-Comeau",
+      "latitude": 49.22,
+      "longitude": 68.15
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Baie-Saint-Paul",
+      "latitude": 47.44,
+      "longitude": 70.51
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Beaconsfield",
+      "latitude": 45.43,
+      "longitude": 73.87
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Beauport",
+      "latitude": 46.87,
+      "longitude": 71.18
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Bedford",
+      "latitude": 45.12,
+      "longitude": 72.98
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Beloeil",
+      "latitude": 45.57,
+      "longitude": 73.2
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Brome",
+      "latitude": 45.2,
+      "longitude": 72.57
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Brossard",
+      "latitude": 45.45,
+      "longitude": 73.47
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Buckingham",
+      "latitude": 45.58,
+      "longitude": 75.42
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "CampbellsBay",
+      "latitude": 45.73,
+      "longitude": 76.6
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Chambly",
+      "latitude": 45.45,
+      "longitude": 73.28
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Coaticook",
+      "latitude": 45.13,
+      "longitude": 71.8
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Contrecoeur",
+      "latitude": 45.85,
+      "longitude": 73.23
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Cowansville",
+      "latitude": 45.2,
+      "longitude": 72.75
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Deux-Montagnes",
+      "latitude": 45.53,
+      "longitude": 73.88
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Dolbeau",
+      "latitude": 48.88,
+      "longitude": 72.23
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Dorval",
+      "latitude": 45.45,
+      "longitude": 73.75
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Drummondville",
+      "latitude": 45.88,
+      "longitude": 72.48
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Farnham",
+      "latitude": 45.28,
+      "longitude": 72.98
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Fort-Coulonge",
+      "latitude": 45.85,
+      "longitude": 76.73
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Gagnon",
+      "latitude": 51.93,
+      "longitude": 68.17
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Gaspé",
+      "latitude": 48.83,
+      "longitude": 64.48
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Gatineau",
+      "latitude": 45.5,
+      "longitude": 75.65
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Gracefield",
+      "latitude": 46.1,
+      "longitude": 76.05
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Granby",
+      "latitude": 45.4,
+      "longitude": 72.73
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Harrington-Harbour",
+      "latitude": 50.5,
+      "longitude": 59.48
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Havre-St-Pierre",
+      "latitude": 50.23,
+      "longitude": 63.6
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Hemmingford",
+      "latitude": 45.05,
+      "longitude": 73.58
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Hull",
+      "latitude": 45.43,
+      "longitude": 75.73
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Iberville",
+      "latitude": 45.35,
+      "longitude": 73.23
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Inukjuak",
+      "latitude": 58.48,
+      "longitude": 78.1
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Joliette",
+      "latitude": 46.02,
+      "longitude": 73.45
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Kuujjuaq",
+      "latitude": 58.1,
+      "longitude": 68.4
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Kuujjuarapik",
+      "latitude": 55.28,
+      "longitude": 77.75
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "LaMalbaie",
+      "latitude": 47.65,
+      "longitude": 70.15
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "LaPocatière",
+      "latitude": 47.37,
+      "longitude": 70.04
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "LaTuque",
+      "latitude": 47.43,
+      "longitude": 72.78
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Lac-Mégantic",
+      "latitude": 45.58,
+      "longitude": 70.88
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Lachute",
+      "latitude": 45.65,
+      "longitude": 74.33
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Laval",
+      "latitude": 45.58,
+      "longitude": 73.75
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Lennoxville",
+      "latitude": 45.37,
+      "longitude": 71.85
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Loretteville",
+      "latitude": 46.85,
+      "longitude": 71.35
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Louiseville",
+      "latitude": 46.25,
+      "longitude": 72.95
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Léry",
+      "latitude": 45.35,
+      "longitude": 73.8
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Lévis",
+      "latitude": 46.8,
+      "longitude": 71.18
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Magog",
+      "latitude": 45.27,
+      "longitude": 72.13
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Malartic",
+      "latitude": 48.13,
+      "longitude": 78.13
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Maniwaki",
+      "latitude": 46.38,
+      "longitude": 75.97
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Masson",
+      "latitude": 45.5333,
+      "longitude": 75.4167
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Matane",
+      "latitude": 48.85,
+      "longitude": 67.53
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Mont-Joli",
+      "latitude": 48.58,
+      "longitude": 68.18
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Mont-Laurier",
+      "latitude": 46.55,
+      "longitude": 75.5
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Montmagny",
+      "latitude": 46.98,
+      "longitude": 70.55
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Montréal-Est",
+      "latitude": 45.63,
+      "longitude": 73.52
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Montréal-Nord",
+      "latitude": 45.6,
+      "longitude": 73.63
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Montréalcityhall_Hôteldeville",
+      "latitude": 45.5089,
+      "longitude": 73.5536
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "NicoletGentilly",
+      "latitude": 46.4,
+      "longitude": 72.28
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Nitchequon",
+      "latitude": 53.21,
+      "longitude": 70.91
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Noranda",
+      "latitude": 48.25,
+      "longitude": 79.02
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Outremont",
+      "latitude": 45.52,
+      "longitude": 73.62
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Percé",
+      "latitude": 48.53,
+      "longitude": 64.22
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Pierrefonds",
+      "latitude": 45.48,
+      "longitude": 73.87
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Pincourt",
+      "latitude": 45.38,
+      "longitude": 73.98
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Plessisville",
+      "latitude": 46.22,
+      "longitude": 71.78
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Port-Cartier",
+      "latitude": 50.02,
+      "longitude": 66.87
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Puvinrituq",
+      "latitude": 60.0333,
+      "longitude": 77.2833
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Québec",
+      "latitude": 46.8,
+      "longitude": 71.23
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Richmond",
+      "latitude": 45.67,
+      "longitude": 72.15
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Rimouski",
+      "latitude": 48.43,
+      "longitude": 68.55
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Rivière-du-Loup",
+      "latitude": 47.83,
+      "longitude": 69.53
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Roberval",
+      "latitude": 48.52,
+      "longitude": 72.23
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Rock-Island",
+      "latitude": 45.04,
+      "longitude": 72.1
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Rosemère",
+      "latitude": 45.63,
+      "longitude": 73.8
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Rouyn",
+      "latitude": 48.23,
+      "longitude": 79.02
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Saguenay",
+      "latitude": 48.43,
+      "longitude": 71.07
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "SaguenayBagotville",
+      "latitude": 48.35,
+      "longitude": 70.88
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "SaguenayJonquière",
+      "latitude": 48.42,
+      "longitude": 71.22
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "SaguenayKénogami",
+      "latitude": 48.42,
+      "longitude": 71.25
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Saint-Eustache",
+      "latitude": 45.56,
+      "longitude": 73.9
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Saint-Jean-sur-Richelieu",
+      "latitude": 45.31,
+      "longitude": 73.26
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Salaberry-de-Valleyfield",
+      "latitude": 45.25,
+      "longitude": 74.13
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Schefferville",
+      "latitude": 54.8,
+      "longitude": 66.83
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Senneterre",
+      "latitude": 48.38,
+      "longitude": 77.23
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Sept-╫les",
+      "latitude": 50.2,
+      "longitude": 66.38
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Shawinigan",
+      "latitude": 46.55,
+      "longitude": 72.75
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Shawville",
+      "latitude": 45.6,
+      "longitude": 76.48
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Sherbrooke",
+      "latitude": 45.42,
+      "longitude": 71.9
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Sillery",
+      "latitude": 46.77,
+      "longitude": 71.25
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Sorel",
+      "latitude": 46.03,
+      "longitude": 73.12
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "St-Félicien",
+      "latitude": 48.65,
+      "longitude": 72.45
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "St-Georges-de-Cacouna",
+      "latitude": 47.92,
+      "longitude": 69.5
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "St-Hubert",
+      "latitude": 45.5,
+      "longitude": 73.42
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "St-Hubert-de-Rivière-du-Loup",
+      "latitude": 47.8167,
+      "longitude": 69.15
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "St-Hyacinthe",
+      "latitude": 45.62,
+      "longitude": 72.95
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "St-Jovite",
+      "latitude": 46.12,
+      "longitude": 74.6
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "St-Jérôme",
+      "latitude": 45.78,
+      "longitude": 74.0
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "St-Lambert",
+      "latitude": 45.5,
+      "longitude": 73.5
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "St-Laurent",
+      "latitude": 45.5,
+      "longitude": 73.67
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "St-LazareHudson",
+      "latitude": 45.4,
+      "longitude": 74.14
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "St-Nicolas",
+      "latitude": 46.7,
+      "longitude": 71.4
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Ste-Agathe-des-Monts",
+      "latitude": 46.05,
+      "longitude": 74.28
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Ste-Anne-de-Bellevue",
+      "latitude": 45.42,
+      "longitude": 73.93
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Ste-Foy",
+      "latitude": 46.78,
+      "longitude": 71.28
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Sutton",
+      "latitude": 45.1,
+      "longitude": 72.62
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Tadoussac",
+      "latitude": 48.15,
+      "longitude": 69.72
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Terrebonne",
+      "latitude": 45.69,
+      "longitude": 73.63
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "ThetfordMines",
+      "latitude": 46.08,
+      "longitude": 71.3
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Thurso",
+      "latitude": 45.6,
+      "longitude": 75.25
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Trois-Rivières",
+      "latitude": 46.35,
+      "longitude": 72.55
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Témiscaming",
+      "latitude": 46.72,
+      "longitude": 79.1
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Val-dOr",
+      "latitude": 48.1,
+      "longitude": 77.78
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Varennes",
+      "latitude": 45.68,
+      "longitude": 73.43
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Verchères",
+      "latitude": 45.78,
+      "longitude": 73.35
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Verdun",
+      "latitude": 45.45,
+      "longitude": 73.57
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Victoriaville",
+      "latitude": 46.05,
+      "longitude": 71.97
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Ville-Marie",
+      "latitude": 47.33,
+      "longitude": 79.43
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Wakefield",
+      "latitude": 45.64,
+      "longitude": 75.93
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Waterloo",
+      "latitude": 45.35,
+      "longitude": 72.52
+    },
+    {
+      "province_code": "QC",
+      "province_name": "Quebec",
+      "city_name": "Windsor",
+      "latitude": 45.57,
+      "longitude": 72.0
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "Assiniboia",
+      "latitude": 49.63,
+      "longitude": 105.98
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "Battrum",
+      "latitude": 50.55,
+      "longitude": 108.33
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "Biggar",
+      "latitude": 52.07,
+      "longitude": 108.0
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "Broadview",
+      "latitude": 50.37,
+      "longitude": 102.58
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "Dafoe",
+      "latitude": 51.75,
+      "longitude": 104.53
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "Dundurn",
+      "latitude": 51.82,
+      "longitude": 106.5
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "Estevan",
+      "latitude": 49.13,
+      "longitude": 102.98
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "HudsonBay",
+      "latitude": 52.85,
+      "longitude": 102.38
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "Humboldt",
+      "latitude": 52.2,
+      "longitude": 105.12
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "IslandFalls",
+      "latitude": 55.53,
+      "longitude": 102.35
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "Kamsack",
+      "latitude": 51.57,
+      "longitude": 101.9
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "Kindersley",
+      "latitude": 51.47,
+      "longitude": 109.17
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "Lloydminster",
+      "latitude": 53.28,
+      "longitude": 110.0
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "MapleCreek",
+      "latitude": 49.92,
+      "longitude": 109.48
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "MeadowLake",
+      "latitude": 54.13,
+      "longitude": 108.43
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "Melfort",
+      "latitude": 52.87,
+      "longitude": 104.62
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "Melville",
+      "latitude": 50.92,
+      "longitude": 102.8
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "MooseJaw",
+      "latitude": 50.4,
+      "longitude": 105.53
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "Nipawin",
+      "latitude": 53.37,
+      "longitude": 104.0
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "NorthBattleford",
+      "latitude": 52.78,
+      "longitude": 108.28
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "PrinceAlbert",
+      "latitude": 53.2,
+      "longitude": 105.77
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "QuAppelle",
+      "latitude": 50.55,
+      "longitude": 103.88
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "Regina",
+      "latitude": 50.45,
+      "longitude": 104.62
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "Rosetown",
+      "latitude": 51.55,
+      "longitude": 108.0
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "Saskatoon",
+      "latitude": 52.12,
+      "longitude": 106.63
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "Scott",
+      "latitude": 52.37,
+      "longitude": 108.83
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "Strasbourg",
+      "latitude": 51.07,
+      "longitude": 104.95
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "SwiftCurrent",
+      "latitude": 50.28,
+      "longitude": 107.8
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "UraniumCity",
+      "latitude": 59.57,
+      "longitude": 108.62
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "Weyburn",
+      "latitude": 49.67,
+      "longitude": 103.85
+    },
+    {
+      "province_code": "SK",
+      "province_name": "Saskatchewan",
+      "city_name": "Yorkton",
+      "latitude": 51.22,
+      "longitude": 102.47
+    },
+    {
+      "province_code": "YT",
+      "province_name": "Yukon",
+      "city_name": "Aishihik",
+      "latitude": 61.6,
+      "longitude": 137.5167
+    },
+    {
+      "province_code": "YT",
+      "province_name": "Yukon",
+      "city_name": "Dawson",
+      "latitude": 64.07,
+      "longitude": 139.42
+    },
+    {
+      "province_code": "YT",
+      "province_name": "Yukon",
+      "city_name": "DestructionBay",
+      "latitude": 61.25,
+      "longitude": 138.8
+    },
+    {
+      "province_code": "YT",
+      "province_name": "Yukon",
+      "city_name": "Faro",
+      "latitude": 62.227,
+      "longitude": 133.357
+    },
+    {
+      "province_code": "YT",
+      "province_name": "Yukon",
+      "city_name": "HainesJunction",
+      "latitude": 60.78,
+      "longitude": 137.54
+    },
+    {
+      "province_code": "YT",
+      "province_name": "Yukon",
+      "city_name": "Snag",
+      "latitude": 62.4,
+      "longitude": 140.37
+    },
+    {
+      "province_code": "YT",
+      "province_name": "Yukon",
+      "city_name": "Teslin",
+      "latitude": 60.17,
+      "longitude": 132.72
+    },
+    {
+      "province_code": "YT",
+      "province_name": "Yukon",
+      "city_name": "WatsonLake",
+      "latitude": 60.13,
+      "longitude": 128.71
+    },
+    {
+      "province_code": "YT",
+      "province_name": "Yukon",
+      "city_name": "Whitehorse",
+      "latitude": 60.72,
+      "longitude": 135.05
+    }
+  ]
+}
